@@ -5,6 +5,10 @@ A new Flutter project.
 ## Getting Started
 
 # Terça, 16 novembro 2021
-- Implementação da tela de abertura.
-- Criação do Componente de título reutilizável para várias telas.
+- Implementação da tela de abertura;
+- Criação do Componente de título reutilizável para várias telas;
 - Tempo de trabalho 2h39m11s
+
+# Quarta, 17 novembro 2021
+- Implementação de todas as tela base;
+- Tempo de trabalho 2h50m39s.

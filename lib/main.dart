@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pre_natal/splash_page.dart';
+import 'package:pre_natal/features/splash_screen/pages/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'PRÉ-NATAL DO HOMEM',
-      theme: ThemeData(),
-      home: const SplashPage(),
+      home: SplashPage(),
     );
   }
 }
