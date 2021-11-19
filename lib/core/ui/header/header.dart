@@ -20,15 +20,21 @@ class Header extends StatelessWidget {
         children: [
           Row(
             textBaseline: TextBaseline.alphabetic,
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.baseline,
             children: [
               Expanded(child: title),
               Container(
                 width: width / 2.9,
                 height: height / 3.25,
-                child: Center(child: secondary),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [Expanded(child: secondary)],
+                  ),
+                ),
                 decoration: BoxDecoration(
-                  color: Color(0xff4842a8),
+                  color: const Color(0xff4842a8),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(width * .8),
                     bottomLeft: Radius.circular(width * .8),

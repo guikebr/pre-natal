@@ -12,3 +12,8 @@ A new Flutter project.
 # Quarta, 17 novembro 2021
 - Implementação de todas as tela base;
 - Tempo de trabalho 2h50m39s.
+
+# Quarta, 18 novembro 2021
+- Criando tela prinpal.
+- Criando tela de configurações.
+- Tempo de trabalho 1h19m17s.
