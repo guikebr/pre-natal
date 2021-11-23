@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import '../../homem/page/saude_homem.dart';
 import 'package:adobe_xd/page_link.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../crianca/pagina/saude_crianca.dart';
 import '../../gestante/pagina/saude_gestante.dart';
@@ -21,6 +19,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: SafeArea(
+        bottom: false,
         child: Stack(
           children: <Widget>[
             Stack(
@@ -107,7 +106,7 @@ class HomePage extends StatelessWidget {
                   alignment: Alignment.bottomLeft,
                   child: Container(
                     width: width,
-                    height: height / 1.3,
+                    height: height / 1.27,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: const AssetImage('assets/images/pai.png'),

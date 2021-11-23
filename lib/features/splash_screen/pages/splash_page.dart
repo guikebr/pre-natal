@@ -10,13 +10,13 @@ class SplashPage extends StatefulWidget {
   State<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage> {
+class _SplashPageState extends State<SplashPage>  {
   @override
   void initState() {
     super.initState();
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
-      SystemUiOverlay.top,
-    ]);
+    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
+    //   SystemUiOverlay.top,
+    // ]);
     Future.delayed(const Duration(seconds: 2)).then((_) {
       Navigator.pushReplacement(
         context,
@@ -61,7 +61,7 @@ class _SplashPageState extends State<SplashPage> {
             alignment: Alignment.bottomLeft,
             child: Container(
               width: width,
-              height: height / 1.3,
+              height: height / 1.27,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: const AssetImage('assets/images/pai.png'),

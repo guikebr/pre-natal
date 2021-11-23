@@ -15,26 +15,26 @@ class ButtonHome extends StatelessWidget {
   Widget build(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
 
-    return Container(
-      height: 32,
-      alignment: Alignment.centerLeft,
-      width: width / 1.8,
-      decoration: const BoxDecoration(
-        color: Color(0xff4842a8),
-        borderRadius: BorderRadius.only(
-          topRight: Radius.circular(16),
-          bottomRight: Radius.circular(16),
+    return PageLink(
+      links: [
+        PageLinkInfo(
+          transition: LinkTransition.Fade,
+          ease: Curves.easeOut,
+          duration: 0.3,
+          pageBuilder: () => page,
         ),
-      ),
-      child: PageLink(
-        links: [
-          PageLinkInfo(
-            transition: LinkTransition.Fade,
-            ease: Curves.easeOut,
-            duration: 0.3,
-            pageBuilder: () => page,
+      ],
+      child: Container(
+        height: 32,
+        alignment: Alignment.centerLeft,
+        width: width / 1.8,
+        decoration: const BoxDecoration(
+          color: Color(0xff4842a8),
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(16),
+            bottomRight: Radius.circular(16),
           ),
-        ],
+        ),
         child: Padding(
           padding: const EdgeInsets.only(left: 16),
           child: Text(
