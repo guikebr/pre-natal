@@ -4,10 +4,12 @@ class Header extends StatelessWidget {
   const Header({
     required this.title,
     required this.secondary,
+    this.color = const Color(0xff4842a8),
     Key? key,
   }) : super(key: key);
 
   final Widget title;
+  final Color color;
   final Widget secondary;
 
   @override
@@ -34,7 +36,7 @@ class Header extends StatelessWidget {
                   ),
                 ),
                 decoration: BoxDecoration(
-                  color: const Color(0xff4842a8),
+                  color: color,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(width * .8),
                     bottomLeft: Radius.circular(width * .8),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 import '../../../core/ui/header/header.dart';
 
@@ -14,9 +13,6 @@ class _SplashPageState extends State<SplashPage>  {
   @override
   void initState() {
     super.initState();
-    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
-    //   SystemUiOverlay.top,
-    // ]);
     Future.delayed(const Duration(seconds: 2)).then((_) {
       Navigator.pushReplacement(
         context,

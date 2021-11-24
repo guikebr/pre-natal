@@ -5,11 +5,15 @@ class ButtonCircularHome extends StatelessWidget {
   const ButtonCircularHome({
     required this.text,
     this.page,
+    this.color = const Color(0xff4842a8),
+    this.initialHome = false,
     Key? key,
   }) : super(key: key);
 
   final Widget? page;
   final String text;
+  final bool initialHome;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +34,7 @@ class ButtonCircularHome extends StatelessWidget {
         height: height * .028,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: const Color(0xff4842a8),
+          color: color,
           borderRadius: BorderRadius.circular(width * .8),
         ),
         child: Padding(

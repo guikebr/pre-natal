@@ -22,3 +22,6 @@ A new Flutter project.
 - Criando tela de configurações -> "Referência";
 - Tempo de trabalho 1h36m08s.
 
+# Segunda, 23 novembro 2021
+- Criando tela de saúde da gestante -> "Menu";
+- Tempo de trabalho 1h00m08s.

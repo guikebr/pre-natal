@@ -5,11 +5,13 @@ class ButtonHome extends StatelessWidget {
   const ButtonHome({
     required this.title,
     required this.page,
+    this.color = const Color(0xff4842a8),
     Key? key,
   }) : super(key: key);
 
   final String title;
   final Widget page;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +30,9 @@ class ButtonHome extends StatelessWidget {
         height: 32,
         alignment: Alignment.centerLeft,
         width: width / 1.8,
-        decoration: const BoxDecoration(
-          color: Color(0xff4842a8),
-          borderRadius: BorderRadius.only(
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: const BorderRadius.only(
             topRight: Radius.circular(16),
             bottomRight: Radius.circular(16),
           ),
