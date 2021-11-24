@@ -229,12 +229,10 @@ class FasesGestacao extends StatelessWidget {
           Pinned.fromPins(
             Pin(start: 0.0, end: -71.0),
             Pin(size: 215.0, end: 62.0),
-            child:
-                // Adobe XD layer: 'fetus-gfe46fe8ec_19…' (shape)
-                Container(
-              decoration: BoxDecoration(
+            child: Container(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage('assets/images/embriao_1.png'),
+                  image: AssetImage('assets/images/embriao_1.png'),
                   fit: BoxFit.fill,
                 ),
               ),

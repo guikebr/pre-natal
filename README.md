@@ -25,3 +25,11 @@ A new Flutter project.
 # Segunda, 23 novembro 2021
 - Criando tela de saúde da gestante -> "Menu";
 - Tempo de trabalho 1h00m08s.
+
+# Segunda, 24 novembro 2021
+- Criando tela de saúde da gestante -> "Lei acompanhate";
+- Criando tela de saúde da gestante -> "Tipos de parto";
+- Criando tela de saúde da gestante -> "Tipos de parto/Parto normal";
+- Criando tela de saúde da gestante -> "Tipos de parto/Parto cirúrgico";
+- Criando tela de saúde da gestante -> "Tipos de parto/Parto humanizado";
+- Tempo de trabalho 00h40m58s.

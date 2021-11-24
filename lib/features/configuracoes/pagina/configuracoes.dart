@@ -95,8 +95,10 @@ class Configuracoes extends StatelessWidget {
                   child: SafeArea(
                     child: Padding(
                       padding: EdgeInsets.only(bottom: 10.0, right: 24.0),
-                      child:
-                          ButtonCircularHome(text: 'INÍCIO', page: HomePage()),
+                      child: ButtonCircularHome(
+                        text: 'INÍCIO',
+                        page: HomePage(),
+                      ),
                     ),
                   ),
                 ),
