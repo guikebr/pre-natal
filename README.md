@@ -33,3 +33,10 @@ A new Flutter project.
 - Criando tela de saúde da gestante -> "Tipos de parto/Parto cirúrgico";
 - Criando tela de saúde da gestante -> "Tipos de parto/Parto humanizado";
 - Tempo de trabalho 00h40m58s.
+
+# Segunda, 25 novembro 2021
+- Criando tela de saúde da gestante -> "Fases da gestação";
+- Criando tela de saúde da gestante -> "Fases da gestação/1 ao 3 trimestre";
+- Criando tela de saúde da gestante -> "Fases da gestação/4 ao 6 trimestre";
+- Criando tela de saúde da gestante -> "Fases da gestação/7 ao nascimento";
+- Tempo de trabalho 01h11m44s.

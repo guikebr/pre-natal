@@ -8,8 +8,15 @@ import '../../gestante/pagina/saude_gestante.dart';
 import '../../configuracoes/pagina/configuracoes.dart';
 import 'widget/button_home.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  Color colorTap = Colors.transparent;
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +33,16 @@ class HomePage extends StatelessWidget {
               children: [
                 Align(
                   alignment: Alignment.topLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 40.0, left: 16),
+                  child: GestureDetector(
+                    onTapUp: (_) => setState(
+                      () => colorTap = Colors.transparent,
+                    ),
+                    onTapDown: (_) => setState(
+                      () => colorTap = const Color(0xff4842a8).withOpacity(.2),
+                    ),
+                    onTapCancel: () => setState(
+                      () => colorTap = Colors.transparent,
+                    ),
                     child: PageLink(
                       links: [
                         PageLinkInfo(
@@ -37,36 +52,43 @@ class HomePage extends StatelessWidget {
                           pageBuilder: () => const Configuracoes(),
                         ),
                       ],
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            width: 32,
-                            height: 3,
-                            margin: const EdgeInsets.symmetric(vertical: 2),
-                            decoration: BoxDecoration(
-                              color: const Color(0xff4842a8),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 40.0, left: 16),
+                        child: Container(
+                          color: colorTap,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: <Widget>[
+                              Container(
+                                width: 32,
+                                height: 4,
+                                margin: const EdgeInsets.symmetric(vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xff4842a8),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                              Container(
+                                width: 32,
+                                height: 4,
+                                margin: const EdgeInsets.symmetric(vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xff4842a8),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                              Container(
+                                width: 32,
+                                height: 4,
+                                margin: const EdgeInsets.symmetric(vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xff4842a8),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                            ],
                           ),
-                          Container(
-                            width: 32,
-                            height: 3,
-                            margin: const EdgeInsets.symmetric(vertical: 2),
-                            decoration: BoxDecoration(
-                              color: const Color(0xff4842a8),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                          ),
-                          Container(
-                            width: 32,
-                            height: 3,
-                            margin: const EdgeInsets.symmetric(vertical: 2),
-                            decoration: BoxDecoration(
-                              color: const Color(0xff4842a8),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
