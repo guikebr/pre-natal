@@ -113,7 +113,6 @@ class SaudeGestante extends StatelessWidget {
                           child: ButtonCircularHome(
                             text: 'INÍCIO',
                             color: Color(0xffe7c4c1),
-                            page: HomePage(),
                           ),
                         ),
                       ],
