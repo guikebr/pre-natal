@@ -1,17 +1,18 @@
 import 'package:adobe_xd/page_link.dart';
 import 'package:flutter/material.dart';
+import 'package:pre_natal/core/ui/colors/colors.dart';
 
 class ButtonHome extends StatelessWidget {
   const ButtonHome({
     required this.title,
     required this.page,
-    this.color = const Color(0xff4842a8),
+    this.type = TypeHeader.man,
     Key? key,
   }) : super(key: key);
 
   final String title;
   final Widget page;
-  final Color color;
+  final TypeHeader type;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class ButtonHome extends StatelessWidget {
         alignment: Alignment.centerLeft,
         width: width / 1.8,
         decoration: BoxDecoration(
-          color: color,
+          color: getBackground(type),
           borderRadius: const BorderRadius.only(
             topRight: Radius.circular(16),
             bottomRight: Radius.circular(16),

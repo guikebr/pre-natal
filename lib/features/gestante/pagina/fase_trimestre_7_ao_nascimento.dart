@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
+import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 
@@ -21,36 +22,12 @@ class FaseTrimestre7AoNascimento extends StatelessWidget {
               height: height * .4,
               child: Stack(
                 children: [
-                  Align(
+                  const Align(
                     alignment: Alignment.centerRight,
                     child: Header(
-                      color: const Color(0xffe7c4c1),
-                      title: Padding(
-                        padding: const EdgeInsets.only(right: 8.0),
-                        child: Text(
-                          '7 Ao',
-                          textAlign: TextAlign.end,
-                          style: TextStyle(
-                            fontFamily: 'Adobe Arabic',
-                            fontSize: width * .1,
-                            fontWeight: FontWeight.bold,
-                            color: const Color(0xffe7c4c1),
-                          ),
-                        ),
-                      ),
-                      secondary: Padding(
-                        padding: const EdgeInsets.only(left: 4.0),
-                        child: Text(
-                          'Nascimento',
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                            fontSize: width * .075,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: 'Adobe Arabic',
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
+                      type: TypeHeader.women,
+                      title: '7 Ao',
+                      secondary: 'Nascimento',
                     ),
                   ),
                   Positioned(
@@ -107,11 +84,14 @@ class FaseTrimestre7AoNascimento extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  ButtonCircularHome(text: 'VOLTAR', color: Color(0xffe7c4c1)),
+                  ButtonCircularHome(
+                    text: 'VOLTAR',
+                    type: TypeHeader.women,
+                  ),
                   ButtonCircularHome(
                     text: 'INÍCIO',
                     page: HomePage(),
-                    color: Color(0xffe7c4c1),
+                    type: TypeHeader.women,
                   ),
                 ],
               ),

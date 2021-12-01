@@ -20,32 +20,7 @@ class Configuracoes extends StatelessWidget {
         bottom: false,
         child: Stack(
           children: <Widget>[
-            Header(
-              title: Padding(
-                padding: const EdgeInsets.only(right: 4),
-                child: Text(
-                  'INFORMAÇÃO',
-                  textAlign: TextAlign.end,
-                  style: TextStyle(
-                    fontFamily: 'Adobe Arabic',
-                    fontSize: width * .075,
-                    color: const Color(0xff4842a8),
-                  ),
-                ),
-              ),
-              secondary: Padding(
-                padding: const EdgeInsets.only(left: 2),
-                child: Text(
-                  'APP',
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    fontSize: width * .075,
-                    fontFamily: 'Adobe Arabic',
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ),
+            const Header(title: 'INFORMAÇÃO', secondary: 'APP'),
             Stack(
               alignment: Alignment.bottomLeft,
               children: [
@@ -95,10 +70,7 @@ class Configuracoes extends StatelessWidget {
                   child: SafeArea(
                     child: Padding(
                       padding: EdgeInsets.only(bottom: 10.0, right: 24.0),
-                      child: ButtonCircularHome(
-                        text: 'INÍCIO',
-                        page: HomePage(),
-                      ),
+                      child: ButtonCircularHome(text: 'INÍCIO'),
                     ),
                   ),
                 ),

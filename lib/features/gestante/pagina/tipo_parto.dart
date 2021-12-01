@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
+import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 import 'package:pre_natal/features/home/pagina/widget/button_home.dart';
@@ -13,41 +14,15 @@ class TipoParto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: SafeArea(
         child: Column(
           children: [
-            Header(
-              title: Padding(
-                padding: const EdgeInsets.only(right: 8.0),
-                child: Text(
-                  'Tipos de ',
-                  textAlign: TextAlign.end,
-                  style: TextStyle(
-                    fontFamily: 'Adobe Arabic',
-                    fontSize: width * .090,
-                    fontWeight: FontWeight.bold,
-                    color: const Color(0xffe7c4c1),
-                  ),
-                ),
-              ),
-              color: const Color(0xffe7c4c1),
-              secondary: Padding(
-                padding: const EdgeInsets.only(left: 4.0),
-                child: Text(
-                  'Parto',
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    fontSize: width * .11,
-                    fontFamily: 'Adobe Arabic',
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
+            const Header(
+              type: TypeHeader.women,
+              title: 'Tipos de',
+              secondary: 'Parto',
             ),
             Expanded(
               child: Column(
@@ -63,17 +38,17 @@ class TipoParto extends StatelessWidget {
                       children: [
                         const ButtonHome(
                           title: 'PARTO NORMAL',
-                          color: Color(0xffe7c4c1),
+                          type: TypeHeader.women,
                           page: PartoNormal(),
                         ),
                         const ButtonHome(
                           title: 'PARTO CIRÚRGICO',
-                          color: Color(0xffe7c4c1),
+                          type: TypeHeader.women,
                           page: PartoCirurgico(),
                         ),
                         const ButtonHome(
                           title: 'PARTO HUMANIZADO',
-                          color: Color(0xffe7c4c1),
+                          type: TypeHeader.women,
                           page: PartoHumanizado(),
                         ),
                       ]
@@ -98,12 +73,12 @@ class TipoParto extends StatelessWidget {
                         children: const [
                           ButtonCircularHome(
                             text: 'VOLTAR',
-                            color: Color(0xffe7c4c1),
+                            type: TypeHeader.women,
                           ),
                           ButtonCircularHome(
                             text: 'INÍCIO',
                             page: HomePage(),
-                            color: Color(0xffe7c4c1),
+                            type: TypeHeader.women,
                           ),
                         ],
                       ),

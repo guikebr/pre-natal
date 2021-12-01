@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
+import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 
@@ -14,34 +15,10 @@ class LeiAcompanhante extends StatelessWidget {
       backgroundColor: const Color(0xffffffff),
       body: Column(
         children: [
-          Header(
-            title: Padding(
-              padding: const EdgeInsets.only(right: 8.0),
-              child: Text(
-                'Acompanhante',
-                textAlign: TextAlign.end,
-                style: TextStyle(
-                  fontFamily: 'Adobe Arabic',
-                  fontSize: width * .090,
-                  fontWeight: FontWeight.bold,
-                  color: const Color(0xffe7c4c1),
-                ),
-              ),
-            ),
-            color: const Color(0xffe7c4c1),
-            secondary: Padding(
-              padding: const EdgeInsets.only(left: 4.0),
-              child: Text(
-                'Lei',
-                textAlign: TextAlign.start,
-                style: TextStyle(
-                  fontSize: width * .11,
-                  fontFamily: 'Adobe Arabic',
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+          const Header(
+            type: TypeHeader.women,
+            title: 'Acopanhante',
+            secondary: 'lei',
           ),
           Expanded(
             child: Padding(
@@ -79,14 +56,11 @@ class LeiAcompanhante extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  ButtonCircularHome(
-                    text: 'VOLTAR',
-                    color: Color(0xffe7c4c1),
-                  ),
+                  ButtonCircularHome(text: 'VOLTAR', type: TypeHeader.women),
                   ButtonCircularHome(
                     text: 'INÍCIO',
                     page: HomePage(),
-                    color: Color(0xffe7c4c1),
+                    type: TypeHeader.women,
                   ),
                 ],
               ),

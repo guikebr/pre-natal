@@ -1,19 +1,20 @@
 import 'package:adobe_xd/page_link.dart';
 import 'package:flutter/material.dart';
+import 'package:pre_natal/core/ui/colors/colors.dart';
 
 class ButtonCircularHome extends StatelessWidget {
   const ButtonCircularHome({
     required this.text,
     this.page,
-    this.color = const Color(0xff4842a8),
     this.initialHome = false,
+    this.type = TypeHeader.man,
     Key? key,
   }) : super(key: key);
 
   final Widget? page;
   final String text;
   final bool initialHome;
-  final Color color;
+  final TypeHeader type;
 
   @override
   Widget build(BuildContext context) {
@@ -31,23 +32,20 @@ class ButtonCircularHome extends StatelessWidget {
       ],
       child: Container(
         width: width * .2,
-        height: height * .028,
+        height: height * .04,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: color,
+          color: getBackground(type),
           borderRadius: BorderRadius.circular(width * .8),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: Text(
-            text,
-            style: const TextStyle(
-              fontFamily: 'Adobe Hebrew',
-              fontSize: 12,
-              color: Color(0xffffffff),
-            ),
-            textAlign: TextAlign.center,
+        child: Text(
+          text,
+          style: const TextStyle(
+            fontFamily: 'Adobe Hebrew',
+            fontSize: 12,
+            color: Color(0xffffffff),
           ),
+          textAlign: TextAlign.center,
         ),
       ),
     );

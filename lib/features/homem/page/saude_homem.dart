@@ -5,7 +5,7 @@ import 'package:adobe_xd/page_link.dart';
 import 'package:pre_natal/features/homem/page/conceito_pre_natal.dart';
 import 'agenda_pre_natal.dart';
 import 'exame_pre_natal.dart';
-import 'calendario_vacinacao.dart';
+import '../../calendarios/pagina/calendario_consulta.dart';
 import 'higiene_penis.dart';
 import 'cancer.dart';
 import 'metodo_preventivo.dart';
@@ -466,7 +466,7 @@ class SaudeHomem extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => const CalendarioVacinacao(),
+                  pageBuilder: () => const CalendarioConsulta(),
                 ),
               ],
               child: const Text.rich(

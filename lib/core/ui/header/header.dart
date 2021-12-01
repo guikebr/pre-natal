@@ -1,42 +1,78 @@
 import 'package:flutter/material.dart';
+import 'package:pre_natal/core/ui/colors/colors.dart';
 
 class Header extends StatelessWidget {
   const Header({
     required this.title,
     required this.secondary,
-    this.color = const Color(0xff4842a8),
+    this.hasSpacing = true,
+    this.type = TypeHeader.man,
     Key? key,
   }) : super(key: key);
 
-  final Widget title;
-  final Color color;
-  final Widget secondary;
+  final String title;
+  final String secondary;
+  final bool hasSpacing;
+  final TypeHeader type;
 
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
 
+    final EdgeInsets paddingTitle =
+        hasSpacing ? const EdgeInsets.only(right: 4) : EdgeInsets.zero;
+
+    final EdgeInsets padding =
+        hasSpacing ? const EdgeInsets.only(left: 4) : EdgeInsets.zero;
+
     return SafeArea(
       child: Column(
         children: [
           Row(
-            textBaseline: TextBaseline.alphabetic,
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.baseline,
             children: [
-              Expanded(child: title),
+              Expanded(
+                child: Padding(
+                  padding: paddingTitle,
+                  child: Text(
+                    title.toUpperCase(),
+                    textAlign: TextAlign.end,
+                    style: TextStyle(
+                      fontSize: width * .070,
+                      fontFamily: 'Adobe Arabic',
+                      fontWeight: FontWeight.bold,
+                      color: getTitleColor(type),
+                    ),
+                  ),
+                ),
+              ),
               Container(
-                width: width / 2.9,
+                width: width / 2.7,
                 height: height / 3.25,
                 child: Center(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [Expanded(child: secondary)],
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: padding,
+                          child: Text(
+                            secondary.toUpperCase(),
+                            style: TextStyle(
+                              fontFamily: 'Adobe Arabic',
+                              fontSize: width * .065,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 decoration: BoxDecoration(
-                  color: color,
+                  color: getBackground(type),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(width * .8),
                     bottomLeft: Radius.circular(width * .8),

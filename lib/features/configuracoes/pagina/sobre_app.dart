@@ -8,32 +8,15 @@ class SobreApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            Header(
-              title: Text(
-                'O APLICA',
-                textAlign: TextAlign.end,
-                style: TextStyle(
-                  fontFamily: 'Adobe Arabic',
-                  fontSize: width * .075,
-                  color: const Color(0xff4842a8),
-                ),
-              ),
-              secondary: Text(
-                'TIVO',
-                textAlign: TextAlign.start,
-                style: TextStyle(
-                  fontSize: width * .075,
-                  fontFamily: 'Adobe Arabic',
-                  color: Colors.white,
-                ),
-              ),
+            const Header(
+              title: 'O APLICA',
+              secondary: 'TIVO',
+              hasSpacing: false,
             ),
             Expanded(
               child: Padding(

@@ -8,34 +8,12 @@ class Referencia extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double height = MediaQuery.of(context).size.height;
-    final double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: SafeArea(
         child: Column(
           children: [
-            Header(
-              title: Text(
-                'REF',
-                textAlign: TextAlign.end,
-                style: TextStyle(
-                  fontFamily: 'Adobe Arabic',
-                  fontSize: width * .075,
-                  color: const Color(0xff4842a8),
-                ),
-              ),
-              secondary: Text(
-                'ERÊNCIA',
-                textAlign: TextAlign.start,
-                style: TextStyle(
-                  fontSize: width * .075,
-                  fontFamily: 'Adobe Arabic',
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            const Header(title: 'REF', hasSpacing: false, secondary: 'ERÊNCIA'),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(24.0),

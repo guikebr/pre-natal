@@ -1,53 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
-import 'package:adobe_xd/page_link.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
+import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
-import 'tipo_parto.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class PartoCirurgico extends StatelessWidget {
   const PartoCirurgico({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Header(
-              title: Padding(
-                padding: const EdgeInsets.only(right: 4.0),
-                child: Text(
-                  'Parto',
-                  textAlign: TextAlign.end,
-                  style: TextStyle(
-                    fontFamily: 'Adobe Arabic',
-                    fontSize: width * .1,
-                    fontWeight: FontWeight.bold,
-                    color: const Color(0xffe7c4c1),
-                  ),
-                ),
-              ),
-              color: const Color(0xffe7c4c1),
-              secondary: Padding(
-                padding: const EdgeInsets.only(left: 4.0),
-                child: Text(
-                  'Cirúrgico',
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    fontSize: width * .075,
-                    fontFamily: 'Adobe Arabic',
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
+            const Header(
+              type: TypeHeader.women,
+              title: 'Parto',
+              secondary: 'Cirúrgico',
             ),
             const Expanded(
               child: Padding(
@@ -78,11 +49,11 @@ class PartoCirurgico extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  ButtonCircularHome(text: 'VOLTAR', color: Color(0xffe7c4c1)),
+                  ButtonCircularHome(text: 'VOLTAR', type: TypeHeader.women),
                   ButtonCircularHome(
                     text: 'INÍCIO',
                     page: HomePage(),
-                    color: Color(0xffe7c4c1),
+                    type: TypeHeader.women,
                   ),
                 ],
               ),

@@ -93,32 +93,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Header(
-                  title: Padding(
-                    padding: const EdgeInsets.only(right: 8.0),
-                    child: Text(
-                      'PRÉ-NATAL DO',
-                      textAlign: TextAlign.end,
-                      style: TextStyle(
-                        fontFamily: 'Adobe Arabic',
-                        fontSize: width * .075,
-                        color: const Color(0xff4842a8),
-                      ),
-                    ),
-                  ),
-                  secondary: Padding(
-                    padding: const EdgeInsets.only(left: 16.0),
-                    child: Text(
-                      'HOMEM',
-                      textAlign: TextAlign.start,
-                      style: TextStyle(
-                        fontSize: width * .1,
-                        fontFamily: 'Adobe Arabic',
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
+                const Header(title: 'PRÉ-NATAL DO', secondary: 'HOMEM'),
               ],
             ),
             Stack(

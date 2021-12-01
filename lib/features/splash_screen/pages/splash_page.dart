@@ -9,7 +9,7 @@ class SplashPage extends StatefulWidget {
   State<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage>  {
+class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
@@ -30,29 +30,7 @@ class _SplashPageState extends State<SplashPage>  {
       backgroundColor: Colors.white,
       body: Stack(
         children: <Widget>[
-          const Header(
-            title: Padding(
-              padding: EdgeInsets.only(right: 8.0),
-              child: Text(
-                'PRÉ-NATAL DO',
-                textAlign: TextAlign.end,
-                style: TextStyle(
-                  fontFamily: 'Adobe Arabic',
-                  fontSize: 31,
-                  color: Color(0xff4842a8),
-                ),
-              ),
-            ),
-            secondary: Text(
-              'HOMEM',
-              textAlign: TextAlign.start,
-              style: TextStyle(
-                fontSize: 44,
-                fontFamily: 'Adobe Arabic',
-                color: Colors.white,
-              ),
-            ),
-          ),
+          const Header(title: 'PRÉ-NATAL DO', secondary: 'HOMEM'),
           Align(
             alignment: Alignment.bottomLeft,
             child: Container(
