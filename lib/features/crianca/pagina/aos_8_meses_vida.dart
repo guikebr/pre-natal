@@ -112,7 +112,7 @@ class Aos8MesesVida extends StatelessWidget {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: AssetImage(''),
                   fit: BoxFit.fill,
                 ),
               ),

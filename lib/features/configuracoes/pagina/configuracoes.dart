@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/configuracoes/pagina/referencia.dart';
-import 'package:pre_natal/features/home/pagina/home_page.dart';
 import 'package:pre_natal/features/home/pagina/widget/button_home.dart';
 import 'sobre_app.dart';
 

@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
-import 'package:adobe_xd/page_link.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
 import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
-import 'package:pre_natal/features/calendarios/pagina/calendario_vacina_recen_nascido.dart';
-import 'package:pre_natal/features/crianca/pagina/saude_crianca.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 import 'package:pre_natal/features/calendarios/pagina/calendario_consulta.dart';
-import '../../calendarios/pagina/calendarios.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
 class Puericultura extends StatelessWidget {
   const Puericultura({Key? key}) : super(key: key);
 
@@ -57,7 +50,7 @@ class Puericultura extends StatelessWidget {
                         color: Color(0xd9000000),
                       ),
                       textAlign: TextAlign.justify,
-                    ),
+                    )
                   ],
                 ),
               ),

@@ -49,5 +49,13 @@ A new Flutter project.
 - Tempo de trabalho 02h39m50s. 159m
 
 # Segunda, 02 Dezembro 2021
+- Criando tela de saúde da criança -> "Puericultura";
 - Criando tela de saúde da criança -> "Calendário de vacinação da criança";
 - Tempo de trabalho 50m12s. 
+
+# Segunda, 02 Dezembro 2021
+- Criando tela de saúde da criança -> "Aleitamento materno" -> "Menu";
+- Criando tela de saúde da criança -> "Aleitamento materno" -> "Conceito";
+- Criando tela de saúde da criança -> "Aleitamento materno" -> "Tipos de aleitamento";
+- Criando tela de saúde da criança -> "Aleitamento materno" -> "Introdução alimentar" -> "Menu";
+- Tempo de trabalho 1h07m42s.
