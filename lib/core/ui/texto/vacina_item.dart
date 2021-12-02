@@ -3,8 +3,8 @@ import 'package:pre_natal/core/ui/colors/colors.dart';
 
 class VacinacaoItem extends StatelessWidget {
   const VacinacaoItem({
-    required this.nomevacina,
-    required this.dose,
+    this.nomevacina = '',
+    this.dose = '',
     this.ano = '',
     this.informacao = '',
     this.type = TypeHeader.child,
@@ -25,65 +25,100 @@ class VacinacaoItem extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        if (nomevacina.isNotEmpty) ...[
+        if (ano.isNotEmpty) ...[
           Text(
-            ano,
+            ano.toUpperCase(),
             style: TextStyle(
-              fontSize: width * .090,
+              fontSize: width * .080,
               fontFamily: 'Adobe Arabic',
               fontWeight: FontWeight.bold,
               color: getTitleColor(type),
             ),
           ),
         ],
-        InkWell(
-          onTap: () {},
-          splashFactory: NoSplash.splashFactory,
-          highlightColor: getBackground(type),
-          borderRadius: const BorderRadius.all(Radius.circular(8)),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 16),
-                child: Row(
-                  children: [
-                    Text(
-                      nomevacina,
-                      style: TextStyle(
-                        fontSize: width * .070,
-                        fontFamily: 'Adobe Arabic',
-                      ),
-                    ),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                        child: Divider(color: getBackground(type)),
-                      ),
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          dose,
-                          style: TextStyle(
-                            fontSize: width * .070,
-                            fontFamily: 'Adobe Arabic',
+        if (nomevacina.isNotEmpty) ...[
+          InkWell(
+            onTap: informacao.isNotEmpty
+                ? () {
+                    showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        titleTextStyle: TextStyle(
+                          fontFamily: 'Adobe Hebrew',
+                          fontSize: width * .05,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 2,
+                          color: const Color(0xd9000000),
+                        ),
+                        title: const Text(
+                          'DOENÇAS PREVENIDAS',
+                          textAlign: TextAlign.center,
+                        ),
+                        contentTextStyle: TextStyle(
+                          fontFamily: 'Adobe Hebrew',
+                          fontSize: width * .05,
+                          color: const Color(0xd9000000),
+                        ),
+                        content: Text(informacao),
+                        actions: <Widget>[
+                          TextButton(
+                            child: Text(
+                              'Fechar',
+                              style: TextStyle(
+                                fontFamily: 'Adobe Hebrew',
+                                fontSize: width * .04,
+                                color: const Color(0xff7BBEB9),
+                              ),
+                            ),
+                            onPressed: Navigator.of(context).pop,
                           ),
-                        ),
-                        Icon(
-                          Icons.info_outlined,
-                          size: 18,
-                          color: getTitleColor(TypeHeader.child),
-                        ),
-                      ],
+                        ],
+                      ),
+                    );
+                  }
+                : null,
+            splashFactory: NoSplash.splashFactory,
+            highlightColor: getBackground(type),
+            borderRadius: const BorderRadius.all(Radius.circular(8)),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    nomevacina,
+                    style: TextStyle(
+                      fontSize: width * .070,
+                      fontFamily: 'Adobe Arabic',
                     ),
-                  ],
-                ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Divider(color: getBackground(type)),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        dose,
+                        style: TextStyle(
+                          fontSize: width * .070,
+                          fontFamily: 'Adobe Arabic',
+                        ),
+                      ),
+                      Icon(
+                        Icons.info_outlined,
+                        size: 18,
+                        color: getTitleColor(TypeHeader.child),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
-        ),
+        ],
       ],
     );
   }

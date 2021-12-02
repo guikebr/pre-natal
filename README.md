@@ -46,5 +46,8 @@ A new Flutter project.
 - Criado padronização de cores (homem, mulher, crianca); 
 - Alterado telas para padronização dos componentes;
 - Criando tela de saúde da criança -> "Menu";
-- Tempo de trabalho 02h39m50s. 
+- Tempo de trabalho 02h39m50s. 159m
 
+# Segunda, 02 Dezembro 2021
+- Criando tela de saúde da criança -> "Calendário de vacinação da criança";
+- Tempo de trabalho 50m12s. 

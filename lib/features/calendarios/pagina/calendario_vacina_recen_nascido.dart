@@ -21,43 +21,88 @@ class CalendarioVacinaRecenNascido extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: ListView(
-                shrinkWrap: true,
-                physics: const BouncingScrollPhysics(),
-                children: const [
-                  VacinacaoItem(
-                    ano: 'Ao nascer',
-                    nomevacina: 'BCG - ID',
-                    dose: 'DOSE ÚNICA',
-                  ),
-                  VacinacaoItem(nomevacina: 'HEPATITE B', dose: 'UMA DOSE'),
-                  VacinacaoItem(
-                    ano: '2 meses',
-                    nomevacina: 'Pentavalente',
-                    dose: '1º DOSE',
-                  ),
-                  VacinacaoItem(nomevacina: 'VIP', dose: '1º DOSE'),
-                  VacinacaoItem(nomevacina: 'HEPATITE B', dose: '1º DOSE'),
-                  VacinacaoItem(nomevacina: 'HEPATITE B', dose: '1º DOSE'),
-                ],
-              ),
-            ),
-            // Expanded(
-            //   child: Container(
-            //     width: width,
-            //     // height: height,
-            //     decoration: const BoxDecoration(
-            //       image: DecorationImage(
-            //         image: AssetImage(
-            //           'assets/images/calendario_rescenascido.png',
-            //         ),
-            //         fit: BoxFit.fill,
+            // Padding(
+            //   padding: const EdgeInsets.all(24.0),
+            //   child: ListView(
+            //     shrinkWrap: true,
+            //     physics: const BouncingScrollPhysics(),
+            //     children: const [
+            //       VacinacaoItem(ano: 'Ao nascer'),
+            //       VacinacaoItem(
+            //         nomevacina: 'BCG - ID',
+            //         dose: 'DOSE ÚNICA',
+            //         informacao: 'Tuberculose',
             //       ),
-            //     ),
+            //       VacinacaoItem(
+            //         nomevacina: 'HEPATITE B',
+            //         dose: '1º DOSE',
+            //         informacao: 'Hepatite B\n\n'
+            //             'A primeira dose da vacina contra a hepatite B deve ser'
+            //             ' administrada na maternidade, nas primeiras 12 horas '
+            //             'de vida do recém-nascido. O esquema básico se '
+            //             'constitui de 03 (três) doses, com intervalos de 30 '
+            //             'dias da primeira para a segunda dose e 180 dias da '
+            //             'primeira para a terceira dose.',
+            //       ),
+            //       VacinacaoItem(ano: '2 meses'),
+            //       VacinacaoItem(
+            //         nomevacina: 'Pentavalente',
+            //         dose: '1º DOSE',
+            //         informacao: 'Difteria, tétano, coqueluche e infecções* '
+            //             'causada pelo Haemophilus influenzae tipo B e hepatite B',
+            //       ),
+            //       VacinacaoItem(
+            //         nomevacina: 'Poliomielite inativada',
+            //         dose: '1º DOSE',
+            //         informacao: 'Poliomielite (paralisia infantil)',
+            //       ),
+            //       VacinacaoItem(
+            //         nomevacina: 'Rotavírus',
+            //         dose: '1º DOSE',
+            //         informacao: 'Gastroenterites por rotavírus',
+            //       ),
+            //       VacinacaoItem(
+            //         nomevacina: 'Pneumocócica 10 V',
+            //         dose: '1º DOSE',
+            //         informacao: 'Alguns tipos de meningite, pneumonia, otite'
+            //             ' média aguda, sinusite, bacteremia e sepse',
+            //       ),
+            //       VacinacaoItem(ano: '3 meses'),
+            //       VacinacaoItem(
+            //         nomevacina: 'Meningocócica C',
+            //         dose: '1º DOSE',
+            //         informacao: 'Meningite tipo C.',
+            //       ),
+            //       VacinacaoItem(ano: '4 meses'),
+            //       VacinacaoItem(ano: '5 meses'),
+            //       VacinacaoItem(ano: '6 meses'),
+            //     ]
+            //         .map((e) => Column(
+            //               children: [
+            //                 e,
+            //                 const Padding(
+            //                   padding: EdgeInsets.only(left: 16.0),
+            //                   child: Divider(color: Colors.grey),
+            //                 )
+            //               ],
+            //             ))
+            //         .toList(),
             //   ),
             // ),
+            Expanded(
+              child: Container(
+                width: width,
+                // height: height,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                      'assets/images/calendario_rescenascido.png',
+                    ),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.only(
                 top: 4,
