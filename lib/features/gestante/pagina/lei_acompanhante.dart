@@ -22,27 +22,34 @@ class LeiAcompanhante extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Text(
-                'A Lei Federal nº 11.108, de 07 de abril de 2005, mais conhecida'
-                ' como a Lei do Acompanhante, determina que os serviços de saúde '
-                'do SUS, da  rede própria ou conveniada, são obrigados a permitir '
-                'à gestante o direito a acompanhante durante todo o período de '
-                'trabalho de parto, parto e pós-parto. A Lei determina que este '
-                'acompanhante será indicado pela gestante, podendo ser o pai do '
-                'bebê, o parceiro atual, a mãe, um(a) amigo(a), ou outra pessoa '
-                'que a gestante escolher. A Lei do Acompanhante é válida para '
-                'parto normal ou cesariana e a presença do(a) acompanhante '
-                '(inclusive se este for adolescente) não pode ser impedida pelo '
-                'hospital ou por qualquer membro da equipe de saúde, nem deve ser '
-                'exigido que o(a) acompanhante tenha participado de alguma '
-                'formação ou grupo.',
-                style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
-                  fontSize: width * .040,
-                  color: const Color(0xff000000),
+              padding: const EdgeInsets.only(left: 24, right: 24, bottom: 24),
+              child: Scrollbar(
+                child: ListView(
+                  shrinkWrap: true,
+                  children: [
+                    Text(
+                      'A Lei Federal nº 11.108, de 07 de abril de 2005, mais conhecida'
+                      ' como a Lei do Acompanhante, determina que os serviços de saúde '
+                      'do SUS, da  rede própria ou conveniada, são obrigados a permitir '
+                      'à gestante o direito a acompanhante durante todo o período de '
+                      'trabalho de parto, parto e pós-parto. A Lei determina que este '
+                      'acompanhante será indicado pela gestante, podendo ser o pai do '
+                      'bebê, o parceiro atual, a mãe, um(a) amigo(a), ou outra pessoa '
+                      'que a gestante escolher. A Lei do Acompanhante é válida para '
+                      'parto normal ou cesariana e a presença do(a) acompanhante '
+                      '(inclusive se este for adolescente) não pode ser impedida pelo '
+                      'hospital ou por qualquer membro da equipe de saúde, nem deve ser '
+                      'exigido que o(a) acompanhante tenha participado de alguma '
+                      'formação ou grupo.',
+                      style: TextStyle(
+                        fontFamily: 'Adobe Hebrew',
+                        fontSize: width * .040,
+                        color: const Color(0xff000000),
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                  ],
                 ),
-                textAlign: TextAlign.justify,
               ),
             ),
           ),

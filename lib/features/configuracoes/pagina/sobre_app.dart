@@ -8,6 +8,8 @@ class SobreApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: SafeArea(
@@ -21,27 +23,31 @@ class SobreApp extends StatelessWidget {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(24.0),
-                child: Column(
-                  children: const [
-                    Text(
-                      "O aplicativo Pré-natal do Homem foi criado a partir da"
-                      " pesquisa de mestrado intitulada 'Desenvolvimento  de "
-                      "Aplicativo Móvel para Intervenção Educativa no Pré-natal"
-                      " do Homem' da Universidade Estadual do Oeste do Paraná. "
-                      "\n\n"
-                      "É gratuito e sem fins lucrativos.  "
-                      "\n\n"
-                      "Registro provisório de propriedade intelectual e "
-                      "patentes de software junto ao instituto Nacional de "
-                      "Propriedade Industrial.",
-                      style: TextStyle(
-                        fontFamily: 'Adobe Hebrew',
-                        fontSize: 17,
-                        color: Color(0xff000000),
-                      ),
-                      textAlign: TextAlign.left,
+                child: Scrollbar(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Text(
+                          "O aplicativo Pré-natal do Homem foi criado a partir da"
+                          " pesquisa de mestrado intitulada 'Desenvolvimento  de "
+                          "Aplicativo Móvel para Intervenção Educativa no Pré-natal"
+                          " do Homem' da Universidade Estadual do Oeste do Paraná. "
+                          "\n\n"
+                          "É gratuito e sem fins lucrativos.  "
+                          "\n\n"
+                          "Registro provisório de propriedade intelectual e "
+                          "patentes de software junto ao instituto Nacional de "
+                          "Propriedade Industrial.",
+                          style: TextStyle(
+                            fontFamily: 'Adobe Hebrew',
+                            fontSize: width * .040,
+                            color: const Color(0xff000000),
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
             ),

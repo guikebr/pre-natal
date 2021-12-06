@@ -30,22 +30,32 @@ class ButtonCircularHome extends StatelessWidget {
           pageBuilder: page != null ? () => page : null,
         ),
       ],
-      child: Container(
-        width: width * .2,
-        height: height * .04,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          color: getBackground(type),
-          borderRadius: BorderRadius.circular(width * .8),
-        ),
-        child: Text(
-          text,
-          style: const TextStyle(
-            fontFamily: 'Adobe Hebrew',
-            fontSize: 12,
-            color: Color(0xffffffff),
+      child: Material(
+        elevation: 4,
+        color: getBackground(type),
+        borderRadius: BorderRadius.circular(width * .8),
+        child: Container(
+          width: width * .25,
+          height: height * .04,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: getBackground(type),
+            border: Border.all(
+              color: type == TypeHeader.another
+                  ? Colors.black
+                  : getBackground(type),
+            ),
+            borderRadius: BorderRadius.circular(width * .8),
           ),
-          textAlign: TextAlign.center,
+          child: Text(
+            text,
+            style: TextStyle(
+              fontFamily: 'Adobe Hebrew',
+              fontSize: 12,
+              color: type == TypeHeader.another ? Colors.black : Colors.white,
+            ),
+            textAlign: TextAlign.center,
+          ),
         ),
       ),
     );

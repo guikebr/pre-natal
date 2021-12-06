@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
 import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
-import 'package:pre_natal/features/calendarios/pagina/calendario_vacina_recen_nascido.dart';
+import 'package:pre_natal/features/calendarios/pagina/calendario_vacina_recenascido.dart';
 import 'package:pre_natal/features/crianca/pagina/aleitamento_materno.dart';
 import 'package:pre_natal/features/crianca/pagina/puericultura.dart';
 import 'package:pre_natal/features/home/pagina/widget/button_home.dart';

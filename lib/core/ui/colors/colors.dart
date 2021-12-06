@@ -1,6 +1,6 @@
 import 'package:flutter/painting.dart';
 
-enum TypeHeader { women, child, man }
+enum TypeHeader { women, child, man, another }
 
 Color getTitleColor(TypeHeader type) {
   switch (type) {
@@ -10,6 +10,8 @@ Color getTitleColor(TypeHeader type) {
       return const Color(0xff7BBEB9);
     case TypeHeader.man:
       return const Color(0xff4842a8);
+    case TypeHeader.another:
+      return const Color(0xff000000);
   }
 }
 
@@ -21,5 +23,7 @@ Color getBackground(TypeHeader type) {
       return const Color(0xff7BBEB9);
     case TypeHeader.man:
       return const Color(0xff4842a8);
+    case TypeHeader.another:
+      return const Color(0xffffffff);
   }
 }

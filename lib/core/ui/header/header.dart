@@ -48,8 +48,8 @@ class Header extends StatelessWidget {
                 ),
               ),
               Container(
-                width: width / 2.7,
-                height: height / 3.25,
+                width: width * .37,
+                height: height * .37,
                 child: Center(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,

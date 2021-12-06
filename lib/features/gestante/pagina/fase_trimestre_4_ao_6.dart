@@ -63,7 +63,7 @@ class FaseTrimestre4Ao6 extends StatelessWidget {
                           ),
                           fit: BoxFit.fill,
                           colorFilter: ColorFilter.mode(
-                            Colors.black.withOpacity(0.9),
+                            Colors.black.withOpacity(0.5),
                             BlendMode.dstIn,
                           ),
                         ),

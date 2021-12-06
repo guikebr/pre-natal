@@ -3,6 +3,7 @@ import 'package:pre_natal/core/ui/button_home/button_home.dart';
 import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
+
 class CalendarioConsulta extends StatelessWidget {
   const CalendarioConsulta({Key? key}) : super(key: key);
 
@@ -22,7 +23,7 @@ class CalendarioConsulta extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(40.0),
+              padding: const EdgeInsets.only(left: 40, right: 40, bottom: 40),
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(),
                 child: Column(

@@ -30,7 +30,7 @@ class ButtonHome extends StatelessWidget {
       child: Container(
         height: 32,
         alignment: Alignment.centerLeft,
-        width: width / 1.8,
+        width: width * .6,
         decoration: BoxDecoration(
           color: getBackground(type),
           borderRadius: const BorderRadius.only(
@@ -42,11 +42,11 @@ class ButtonHome extends StatelessWidget {
           padding: const EdgeInsets.only(left: 16),
           child: Text(
             title,
-            textAlign: TextAlign.start,
+            textAlign: TextAlign.justify,
             style: const TextStyle(
+              fontSize: 15,
               color: Color(0xffffffff),
               fontFamily: 'Adobe Hebrew',
-              fontSize: 15,
             ),
           ),
         ),

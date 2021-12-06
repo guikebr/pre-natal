@@ -58,11 +58,12 @@ class FaseTrimestre1Ao3 extends StatelessWidget {
                       height: height * .25,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image:
-                              const AssetImage('assets/images/embriao_2.png'),
+                          image: const AssetImage(
+                            'assets/images/embriao_2.png',
+                          ),
                           fit: BoxFit.fill,
                           colorFilter: ColorFilter.mode(
-                            Colors.black.withOpacity(0.9),
+                            Colors.black.withOpacity(0.5),
                             BlendMode.dstIn,
                           ),
                         ),
