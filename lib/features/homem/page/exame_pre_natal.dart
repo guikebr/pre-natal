@@ -1,244 +1,115 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
-import 'package:adobe_xd/page_link.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:pre_natal/core/ui/button_home/button_home.dart';
+import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 
 class ExamePreNatal extends StatelessWidget {
   const ExamePreNatal({Key? key}) : super(key: key);
 
+  Text titleList(String text, double width) {
+    return Text(
+      text,
+      style: TextStyle(
+        fontFamily: 'Adobe Hebrew',
+        fontSize: width * .040,
+        color: const Color(0xd9000000),
+      ),
+      textAlign: TextAlign.justify,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
-      body: Stack(
-        children: <Widget>[
-          Pinned.fromPins(
-            Pin(size: 1.0, start: 48.0),
-            Pin(size: 9.7, start: 61.6),
-            child: SvgPicture.string(
-              _svg_bjfjva,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, start: 48.0),
-            Pin(size: 9.7, start: 61.6),
-            child: SvgPicture.string(
-              _svg_bjfjva,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 9.7, start: 61.6),
-            child: SvgPicture.string(
-              _svg_yra38,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, start: 48.0),
-            Pin(size: 9.7, start: 61.6),
-            child: SvgPicture.string(
-              _svg_bjfjva,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, start: 48.0),
-            Pin(size: 9.7, start: 61.6),
-            child: SvgPicture.string(
-              _svg_bjfjva,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 9.7, start: 61.6),
-            child: SvgPicture.string(
-              _svg_yra38,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 8.0, start: 64.2),
-            child: SvgPicture.string(
-              _svg_q56eno,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 8.0, start: 64.2),
-            child: SvgPicture.string(
-              _svg_q56eno,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 8.0, start: 64.2),
-            child: SvgPicture.string(
-              _svg_q56eno,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 7.9, start: 64.4),
-            child: SvgPicture.string(
-              _svg_lyy1zg,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 9.7, start: 61.6),
-            child: SvgPicture.string(
-              _svg_yra38,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 9.7, start: 61.6),
-            child: SvgPicture.string(
-              _svg_yra38,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 8.0, start: 64.2),
-            child: SvgPicture.string(
-              _svg_q56eno,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 8.0, start: 64.2),
-            child: SvgPicture.string(
-              _svg_q56eno,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 8.0, start: 64.2),
-            child: SvgPicture.string(
-              _svg_q56eno,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 1.0, middle: 0.4206),
-            Pin(size: 7.9, start: 64.4),
-            child: SvgPicture.string(
-              _svg_lyy1zg,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 233.4, end: -127.0),
-            Pin(size: 211.0, start: 0.0),
-            child: SvgPicture.string(
-              _svg_j2n1xl,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 272.0, end: 3.0),
-            Pin(size: 34.0, start: 89.0),
-            child: const Text.rich(
-              TextSpan(
-                style: TextStyle(
-                  fontFamily: 'Adobe Arabic',
-                  fontSize: 31,
-                  color: Color(0xff4842a8),
-                ),
-                children: [
-                  TextSpan(
-                    text: '      EXAMES NO ',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                    ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const Header(title: 'EXAMES NO', secondary: 'PRÉ-NATAL'),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(24),
+              child: Scrollbar(
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      titleList(
+                        'Consiste em exames que podem evitar uma série de doenças e '
+                        'complicações, transmitidas do  pai para a mãe e, '
+                        'consequentemente  para o bebê, como doenças sexualmente '
+                        'transmissíveis e virais por via aérea.\n\nOutros exames serão '
+                        'solicitados para avaliar o estado geral da saúde do homem.',
+                        width,
+                      ),
+                      titleList(
+                        '1. Tipagem sanguínea e Fator RH (no caso da mulher ter'
+                        ' RH negativo);',
+                        width,
+                      ),
+                      titleList(
+                        '2. Pesquisa de antígeno de superfície do vírus da '
+                        'Hepatite B (HBsAg);',
+                        width,
+                      ),
+                      titleList(
+                        '3. Teste treponêmico e/ou não treponêmico para '
+                        'detecção de Sífilis por meio de tecnologia convencional'
+                        ' ou rápida;',
+                        width,
+                      ),
+                      titleList('4. Pesquisa de Anticorpos anti-HIV;', width),
+                      titleList(
+                        '5. Pesquisa de anticorpos do vírus da Hepatite C '
+                        '(anti-HCV);',
+                        width,
+                      ),
+                      titleList('6. Hemograma;', width),
+                      titleList(
+                        '7. Lipidograma: dosagem de colesterol HDL, dosagem de '
+                        'colesterol LDL, dosagem de colesterol total, dosagem '
+                        'de triglicerídeos;',
+                        width,
+                      ),
+                      titleList('8. Dosagem de Glicose;', width),
+                      titleList(
+                        '9. Eletroforese da hemoglobina (para detecção da '
+                        'doença falciforme);',
+                        width,
+                      ),
+                      titleList(
+                        '10. Aferição de Pressão Arterial;',
+                        width,
+                      ),
+                      titleList(
+                        '11. Verificação de Peso e cálculo de IMC (índice de'
+                        ' Massa Corporal). ',
+                        width,
+                      ),
+                    ]
+                        .map(
+                          (e) => Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 12),
+                            child: e,
+                          ),
+                        )
+                        .toList(),
                   ),
-                  TextSpan(
-                    text: 'PRÉ-NATAL',
-                    style: TextStyle(
-                      fontSize: 26,
-                      color: Color(0xffffffff),
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ],
-              ),
-              textHeightBehavior: TextHeightBehavior(applyHeightToFirstAscent: false,),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 26.0, end: 25.0),
-            Pin(size: 302.0, middle: 0.6598),
-            child: const Text(
-              'Consiste em exames que podem evitar uma série de doenças e complicações, transmitidas do  pai para a mãe e, consequentemente  para o bebê, como doenças sexualmente transmissíveis \ne virais por via aérea.\n\nOutros exames serão solicitados para avaliar o estado geral da saúde do homem.\n',
-              style: TextStyle(
-                fontFamily: 'Adobe Hebrew',
-                fontSize: 17,
-                color: Color(0xff000000),
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 68.0, end: 13.0),
-            Pin(size: 24.3, end: 11.7),
-            child: SvgPicture.string(
-              _svg_xhjru,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 37.0, end: 29.0),
-            Pin(size: 14.0, end: 17.0),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => const HomePage(),
                 ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 24, right: 24, bottom: 18),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                ButtonCircularHome(text: 'VOLTAR'),
+                ButtonCircularHome(text: 'INÍCIO', page: HomePage()),
               ],
-              child: const Text(
-                'INÍCIO',
-                style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
-                  fontSize: 12,
-                  color: Color(0xffffffff),
-                ),
-                textAlign: TextAlign.left,
-              ),
             ),
           ),
         ],
@@ -246,16 +117,3 @@ class ExamePreNatal extends StatelessWidget {
     );
   }
 }
-
-const String _svg_bjfjva =
-    '<svg viewBox="48.0 61.6 1.0 9.7" ><path transform="translate(48.0, 36.0)" d="M 0 30.5 C 0 13.65531730651855 0 47.34468078613281 0 30.5 Z" fill="#ffffff" stroke="#707070" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_yra38 =
-    '<svg viewBox="151.0 61.6 1.0 9.7" ><path transform="translate(151.0, 36.0)" d="M 0 30.5 C 0 13.65531730651855 0 47.34468078613281 0 30.5 Z" fill="#ffffff" stroke="#707070" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_q56eno =
-    '<svg viewBox="151.0 64.2 1.0 8.0" ><path transform="translate(151.0, 36.0)" d="M 0 30.5 C 0 20.52801513671875 0 47.34468078613281 0 30.5 Z" fill="#ffffff" stroke="#707070" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_lyy1zg =
-    '<svg viewBox="151.0 64.4 1.0 7.9" ><path transform="translate(151.0, 36.0)" d="M 0 30.5 C 0 21.03334999084473 0 47.34468078613281 0 30.5 Z" fill="#ffffff" stroke="#707070" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_j2n1xl =
-    '<svg viewBox="253.6 0.0 233.4 211.0" ><path transform="translate(253.55, 0.0)" d="M 116.7234039306641 0 C 181.1879425048828 0 233.4468078613281 47.23395919799805 233.4468078613281 105.5 C 233.4468078613281 163.7660369873047 181.1879425048828 211 116.7234039306641 211 C 52.25885391235352 211 0 163.7660369873047 0 105.5 C 0 47.23395919799805 52.25885391235352 0 116.7234039306641 0 Z" fill="#4842a8" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_xhjru =
-    '<svg viewBox="279.0 604.0 68.0 24.3" ><defs><filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="6"/></filter></defs><path transform="translate(279.0, 604.0)" d="M 13.77215194702148 0 L 54.22784805297852 0 C 61.8339958190918 0 68 5.436184883117676 68 12.14205932617188 C 68 18.84793472290039 61.8339958190918 24.28411865234375 54.22784805297852 24.28411865234375 L 13.77215194702148 24.28411865234375 C 6.16600227355957 24.28411865234375 0 18.84793472290039 0 12.14205932617188 C 0 5.436184883117676 6.16600227355957 0 13.77215194702148 0 Z" fill="#4842a8" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" filter="url(#shadow)"/></svg>';

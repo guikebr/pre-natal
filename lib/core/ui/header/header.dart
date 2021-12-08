@@ -3,8 +3,8 @@ import 'package:pre_natal/core/ui/colors/colors.dart';
 
 class Header extends StatelessWidget {
   const Header({
-    required this.title,
     required this.secondary,
+    this.title = '',
     this.hasSpacing = true,
     this.type = TypeHeader.man,
     Key? key,
@@ -49,7 +49,7 @@ class Header extends StatelessWidget {
               ),
               Container(
                 width: width * .37,
-                height: height * .37,
+                height: height * .33,
                 child: Center(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -74,8 +74,8 @@ class Header extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: getBackground(type),
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(width * .8),
-                    bottomLeft: Radius.circular(width * .8),
+                    topLeft: Radius.circular(width),
+                    bottomLeft: Radius.circular(width),
                   ),
                 ),
               ),

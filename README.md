@@ -71,6 +71,7 @@ A new Flutter project.
 - Tempo de trabalho 1h07m42s. 67min
 
 # Segunda, 06 Dezebro 2021
+
 - Criando tela de saúde da criança -> "Aleitamento materno" -> "Introdução alimentar" -> "0 a 6
   meses";
 - Criando tela de saúde da criança -> "Aleitamento materno" -> "Introdução alimentar" -> "Aos 6
@@ -82,3 +83,11 @@ A new Flutter project.
 - Criando tela de saúde da criança -> "Aleitamento materno" -> "Introdução alimentar" -> "1 a 2
   anos";
 - Tempo de trabalho 1h21m30s. 81min
+
+# Quarta, 08 Dezebro 2021
+
+- Criando tela de saúde do homem -> "Meru principal";
+- Criando tela de saúde do homem -> "PRÉ-NATAL CONCEITO";
+- Criando tela de saúde do homem -> "EXAMES NO PRÉ-NATAL";
+- Criando tela de saúde do homem -> "LICENÇA PATERNIDADE";
+- Tempo de trabalho 1h01m42s. 61min
