@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
-import 'package:adobe_xd/page_link.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
-import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
-import 'package:pre_natal/features/homem/page/saude_homem.dart';
 
 class ConceitoPreNatal extends StatelessWidget {
   const ConceitoPreNatal({Key? key}) : super(key: key);

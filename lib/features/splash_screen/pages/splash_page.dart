@@ -13,10 +13,12 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 2)).then((_) {
+    Future.delayed(const Duration(seconds: 1)).then((_) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
+        MaterialPageRoute(
+          builder: (context) => const HomePage(),
+        ),
       );
     });
   }
@@ -34,8 +36,8 @@ class _SplashPageState extends State<SplashPage> {
           Align(
             alignment: Alignment.bottomLeft,
             child: Container(
-              width: width,
-              height: height / 1.27,
+              width: width * .95,
+              height: height * .77,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: const AssetImage('assets/images/pai.png'),

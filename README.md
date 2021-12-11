@@ -91,3 +91,29 @@ A new Flutter project.
 - Criando tela de saúde do homem -> "EXAMES NO PRÉ-NATAL";
 - Criando tela de saúde do homem -> "LICENÇA PATERNIDADE";
 - Tempo de trabalho 1h01m42s. 61min
+
+# Sexta, 10 Dezebro 2021
+- Criando tela de saúde do homem -> "Meru principal";
+- Criando tela de saúde do homem -> "AGENDA PRÉ-NATAL" -> "MENU";
+- Criando tela de saúde do homem -> "CALENDÁRIO VACINAL";
+- Criando tela de saúde do homem -> "HIGIENIZAÇÃO DO PENIS" -> "MENU";
+- Criando tela de saúde do homem -> "HIGIENIZAÇÃO DO PENIS" -> "MENU" -> "NA MICÇÃO";
+- Criando tela de saúde do homem -> "HIGIENIZAÇÃO DO PENIS" -> "MENU" -> "NO BANHO;"
+- Criando tela de saúde do homem -> "HIGIENIZAÇÃO DO PENIS" -> "MENU" -> "APÓS O ATO SEXUAL;
+- Criando tela de saúde do homem -> "HIGIENIZAÇÃO DO PENIS" -> "MENU" -> "NA DEPILAÇÃO";
+- Criando tela de saúde do homem -> "HIGIENIZAÇÃO DO PENIS" -> "MENU" -> "ROUPAS INTIMAS";
+- Criando tela de saúde do homem -> "PROSTATA" -> "MENU";
+- Criando tela de saúde do homem -> "PROSTATA" -> "MENU" -> "CONCEITO;
+- Criando tela de saúde do homem -> "PROSTATA" -> "MENU" -> "SINAIS E SINTOMAS";
+- Criando tela de saúde do homem -> "PROSTATA" -> "MENU" -> "PREVENÇÃO";
+- Criando tela de saúde do homem -> "MÉTODO PREVENTIVO" -> "MENU";
+- Criando tela de saúde do homem -> "MÉTODO PREVENTIVO" -> "MENU" -> "CONCEITO";
+- Criando tela de saúde do homem -> "MÉTODO PREVENTIVO" -> "MENU" -> "CAMISINHA MASCULINA";
+- Criando tela de saúde do homem -> "MÉTODO PREVENTIVO" -> "MENU" -> "VASECTOMIA";
+- Criando tela de saúde do homem -> "INFECÇÕES SEXUAIS" -> "MENU";
+- Criando tela de saúde do homem -> "INFECÇÕES SEXUAIS" -> "MENU" -> "HEPATITES";
+- Criando tela de saúde do homem -> "INFECÇÕES SEXUAIS" -> "MENU" -> "HIV";
+- Criando tela de saúde do homem -> "INFECÇÕES SEXUAIS" -> "MENU" -> "SÍFILIS";
+- Criando tela de saúde do homem -> "INFECÇÕES SEXUAIS" -> "MENU" -> "HPV";
+- Criando tela de saúde do homem -> "FOTOGESTAÇÃO" (TELA);
+- Tempo de trabalho 2h30m00s. 150min

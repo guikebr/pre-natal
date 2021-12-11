@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pre_natal/core/ui/button_home/button_home.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
+import 'package:pre_natal/features/configuracoes/pagina/autores.dart';
 import 'package:pre_natal/features/configuracoes/pagina/referencia.dart';
 import 'package:pre_natal/features/home/pagina/widget/button_home.dart';
 import 'sobre_app.dart';
@@ -48,6 +49,7 @@ class Configuracoes extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        const ButtonHome(title: 'AUTORES', page: Autores()),
                         const ButtonHome(title: 'O APP', page: SobreApp()),
                         const ButtonHome(
                           title: 'REFÊNCIA',

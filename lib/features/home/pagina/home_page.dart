@@ -102,8 +102,8 @@ class _HomePageState extends State<HomePage> {
                 Align(
                   alignment: Alignment.bottomLeft,
                   child: Container(
-                    width: width * .9,
-                    height: height * .75,
+                    width: width * .95,
+                    height: height * .77,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: const AssetImage('assets/images/pai.png'),
