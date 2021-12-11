@@ -23,25 +23,29 @@ class TiposAleitamento extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(left: 24, right: 24, bottom: 24),
               child: Scrollbar(
-                child: ListView(
-                  shrinkWrap: true,
-                  children: const [
-                    Text(
-                      'EXCLUSIVO: Quando a criança recebe somente leite materno, '
-                      'direto da mama ou ordenhado, ou leite humano de outra forma, '
-                      'sem outros líquidos ou sólidos.\n\nPREDOMINANTE:  Quando a '
-                      'criança recebe, além do leito materno, água ou bebidas a base '
-                      'de água (água adocicada, chás ou infusões e sucos).'
-                      '\n\nCOMPLEMENTADO: Quando a criança recebe, além do leite '
-                      'materno, qualquer alimento sólido ou semissólido com a '
-                      'finalidade de complementa-lo, e não de substituí-lo. '
-                      '\n\nMISTO OU PACIAL: Quando a criança recebe leite materno e '
-                      'outros tipos de leite. \n\n\n\n',
-                      style:
-                          TextStyle(fontFamily: 'Adobe Hebrew', fontSize: 15),
-                      textAlign: TextAlign.justify,
-                    ),
-                  ],
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: Column(
+                    children: const [
+                      Text(
+                        'EXCLUSIVO: Quando a criança recebe somente leite materno, '
+                        'direto da mama ou ordenhado, ou leite humano de outra forma, '
+                        'sem outros líquidos ou sólidos.\n\nPREDOMINANTE:  Quando a '
+                        'criança recebe, além do leito materno, água ou bebidas a base '
+                        'de água (água adocicada, chás ou infusões e sucos).'
+                        '\n\nCOMPLEMENTADO: Quando a criança recebe, além do leite '
+                        'materno, qualquer alimento sólido ou semissólido com a '
+                        'finalidade de complementa-lo, e não de substituí-lo. '
+                        '\n\nMISTO OU PACIAL: Quando a criança recebe leite materno e '
+                        'outros tipos de leite. \n\n\n\n',
+                        style: TextStyle(
+                          fontFamily: 'Adobe Hebrew',
+                          fontSize: 15,
+                        ),
+                        textAlign: TextAlign.justify,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
