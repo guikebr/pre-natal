@@ -26,9 +26,9 @@ class Autores extends StatelessWidget {
                           'Adriana Zilly - Mestrado e Doutorado em Ciências '
                           'Biológicas pela UEM - Universidade Estadual de '
                           'Maringá e graduação em Ciências Biológicas pela '
-                          'Unioesta/ Cascavel. Docente do curso de Enfermagemm,'
-                          'do Programa de Pós Graduação (Mestrado) em Ensino e'
-                          'do Programa de Pós Graduação (Mestrado) em Saúde '
+                          'Unioeste/ Cascavel. Docente do curso de Enfermagem, '
+                          'do Programa de Pós Graduação (Mestrado) em Ensino'
+                          ' Programa de Pós Graduação (Mestrado) em Saúde '
                           'Pública em Região de Fronteira da Unioeste/Foz.',
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
@@ -38,9 +38,9 @@ class Autores extends StatelessWidget {
                           textAlign: TextAlign.justify,
                         ),
                         Text(
-                          '\n\nDaniel Vinício Dias Ferreira - Mestrando em Ensino'
-                          'pela Universidade Estadual do Oeste do Paraná, '
-                          'especialista e docência e enferage e unidade de '
+                          '\n\nDaniel Vinício Dias Ferreira - Mestre em Ensino'
+                          ' pela Universidade Estadual do Oeste do Paraná, '
+                          'especialista em docência e enferagem e unidade de '
                           'terapia intensiva e graduação em Enfermagem pelo '
                           'Centro Universitário Uniamérica. '
                           'Docente da Universidade Veiga de Almeida.',

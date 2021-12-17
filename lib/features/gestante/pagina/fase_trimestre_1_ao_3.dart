@@ -20,7 +20,7 @@ class FaseTrimestre1Ao3 extends StatelessWidget {
           const Header(
             type: TypeHeader.women,
             title: 'Trimestre',
-            secondary: '1 ao 3',
+            secondary: '1° AO 3° MÊS',
           ),
           Expanded(
             child: Stack(

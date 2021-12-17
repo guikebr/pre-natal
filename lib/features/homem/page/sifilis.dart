@@ -10,6 +10,12 @@ class Sifilis extends StatelessWidget {
   Widget build(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
 
+    final TextStyle style = TextStyle(
+      fontFamily: 'Adobe Hebrew',
+      fontSize: width * .040,
+      color: const Color(0xd9000000),
+    );
+
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: Column(
@@ -19,22 +25,33 @@ class Sifilis extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(24),
-              child: Text(
-                'Enfermidade infecciosa sistêmica causada pela bactéria'
-                ' Treponema pallidum, transmitida sexualmente, por transfusão'
-                ' de sangue, durante a gestação e/ou parto, entre outras. A '
-                'transmissão da sífilis pode ser controlada por meio do uso '
-                'regular de preservativos e por diagnóstico precoce em homens e'
-                ' sua(s) parceria(s). Durante o pré-natal, é importante testes'
-                ' rápidos para sífilis não somente da gestante como, também, '
-                'de sua(s) parceria(s). Ao ser diagnosticada a sífilis na '
-                'gestante, é fundamental que tanto ela quanto sua(s) parceria(s)'
-                ' sexual(is) sejam tratadas.',
-                style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
-                  fontSize: width * .040,
-                  color: const Color(0xd9000000),
+              child: Text.rich(
+                TextSpan(
+                  text: 'Enfermidade infecciosa sistêmica causada pela '
+                      'bactéria ',
+                  children: [
+                    TextSpan(
+                      text: 'Treponema pallidum',
+                      style: style.copyWith(
+                        decoration: TextDecoration.underline,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                    TextSpan(
+                      text: ', transmitida sexualmente, por transfusão'
+                          ' de sangue, durante a gestação e/ou parto, entre outras. A '
+                          'transmissão da sífilis pode ser controlada por meio do uso '
+                          'regular de preservativos e por diagnóstico precoce em homens e'
+                          ' sua(s) parceria(s). Durante o pré-natal, é importante testes'
+                          ' rápidos para sífilis não somente da gestante como, também, '
+                          'de sua(s) parceria(s). Ao ser diagnosticada a sífilis na '
+                          'gestante, é fundamental que tanto ela quanto seu(s) parcerio(s)'
+                          ' sexual(is) sejam tratados.',
+                      style: style,
+                    ),
+                  ],
                 ),
+                style: style,
                 textAlign: TextAlign.justify,
               ),
             ),

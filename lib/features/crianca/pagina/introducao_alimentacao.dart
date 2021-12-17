@@ -4,9 +4,9 @@ import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/crianca/pagina/aos_11_meses_vida.dart';
 import 'package:pre_natal/features/crianca/pagina/aos_2_anos_vida.dart';
-import 'package:pre_natal/features/crianca/pagina/aos_6_meses_vida.dart';
-import 'package:pre_natal/features/crianca/pagina/aos_8_meses_vida.dart';
 import 'package:pre_natal/features/crianca/pagina/aos_0_6_meses_vida.dart';
+import 'package:pre_natal/features/crianca/pagina/aos_8_meses_vida.dart';
+import 'package:pre_natal/features/crianca/pagina/aos_6_meses_vida.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 import 'package:pre_natal/features/home/pagina/widget/button_home.dart';
 

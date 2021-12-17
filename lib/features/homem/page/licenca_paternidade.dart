@@ -24,8 +24,8 @@ class LicencaPaternidade extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(24),
               child: Text(
-                'De acordo com Constituição Federal/88 em seu artigo 7º, você '
-                'tem direito a cinco dias de licença-paternidade.Um ganho para '
+                'De acordo com Constituição Federal/88, em seu artigo 7º, o homem '
+                'tem direito a cinco dias de licença-paternidade. Um ganho para '
                 'a ampliação desse direito foi a publicação da Lei nº 13.257, '
                 'de 8 de março de 2016, que dispõe sobre as políticas públicas '
                 'para primeira infância. Dentro desta lei, existem artigos '

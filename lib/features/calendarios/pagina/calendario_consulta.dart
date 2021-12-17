@@ -17,13 +17,18 @@ class CalendarioConsulta extends StatelessWidget {
       body: Column(
         children: [
           const Header(
-            title: 'CALENDÁRIO',
-            secondary: 'CONSULTA',
+            title: 'CALENDÁRIO DE',
+            secondary: 'CONSULTAS',
             type: TypeHeader.child,
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.only(left: 40, right: 40, bottom: 40),
+              padding: const EdgeInsets.only(
+                top: 10,
+                left: 40,
+                right: 40,
+                bottom: 40,
+              ),
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(),
                 child: Column(

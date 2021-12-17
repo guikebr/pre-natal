@@ -15,17 +15,17 @@ class CancerPropostata extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Header(title: 'CÂNCER', secondary: 'PROSTATA'),
+          const Header(title: 'CÂNCER', secondary: 'PRÓSTATA'),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(24),
               child: Text(
-                'Câncer de próstata é o tumor que afeta a prostata, glândula '
+                'Câncer de próstata é o tumor que afeta a próstata, glândula '
                 'localizada abaixo da bexiga e que envolve a uretra, canal que'
-                ' liga a bexiga ao orifício externo do pênis.O câncer de '
+                ' liga a bexiga ao orifício externo do pênis. O câncer de '
                 'próstata é o mais frequente entre os homens, depois do câncer'
                 ' de pele. Embora seja uma doença comum, por medo ou por'
-                ' desconhecimento muitos homens preferem não conversar sobre '
+                ' desconhecimento, muitos homens preferem não conversar sobre '
                 'esse assunto.\nO câncer de próstata, na maioria dos casos, '
                 'cresce de forma lenta e não chega a dar sinais durante a vida '
                 'e nem a ameaçar a saúde do homem. Em outros casos, pode '

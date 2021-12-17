@@ -24,7 +24,7 @@ class CirurgiaVasectomia extends StatelessWidget {
                 'anticoncepcional considerado permanente ou irreversível, '
                 'porque, depois de feita a cirurgia, é muito difícil recuperar '
                 'a capacidade de ter filhos. Nessa cirurgia, os canais '
-                'deferentes são cortados e amarrados, cauterizados, ou fechados'
+                'deferentes são cortados e amarrados, cauterizados ou fechados'
                 ' com grampos. \nÉ uma cirurgia simples, que pode ser feita em '
                 'ambulatório, com anestesia local e o homem não precisa ficar '
                 'internado.\nA vasectomia age impedindo que os espermatozóides '

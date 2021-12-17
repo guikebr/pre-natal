@@ -21,37 +21,34 @@ class FaseTrimestre7AoNascimento extends StatelessWidget {
             SizedBox(
               height: height * .4,
               child: Stack(
+                alignment: Alignment.topLeft,
                 children: [
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 16.0),
+                    child: Container(
+                      width: width * 0.55,
+                      height: height * .4,
+                      // margin: EdgeInsets.all(30),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: const AssetImage(
+                            'assets/images/embriao_4.png',
+                          ),
+                          fit: BoxFit.fill,
+                          colorFilter: ColorFilter.mode(
+                            Colors.black.withOpacity(0.9),
+                            BlendMode.dstIn,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                   const Align(
                     alignment: Alignment.centerRight,
                     child: Header(
                       type: TypeHeader.women,
-                      title: '7 Ao',
+                      title: '7° MÊS ao',
                       secondary: 'Nascimento',
-                    ),
-                  ),
-                  Positioned(
-                    left: -100,
-                    bottom: 0,
-                    top: 0,
-                    child: Padding(
-                      padding: const EdgeInsets.only(bottom: 16.0),
-                      child: Container(
-                        width: width * 0.9,
-                        height: height * .4,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: const AssetImage(
-                              'assets/images/embriao_4.png',
-                            ),
-                            fit: BoxFit.cover,
-                            colorFilter: ColorFilter.mode(
-                              Colors.black.withOpacity(0.9),
-                              BlendMode.dstIn,
-                            ),
-                          ),
-                        ),
-                      ),
                     ),
                   ),
                 ],
@@ -61,12 +58,12 @@ class FaseTrimestre7AoNascimento extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(24.0),
                 child: Text(
-                  'De 27 a 30 semanas ele pode pesar 1 kg e medir cerca de 32 cm. '
+                  'De 27 a 30 semanas, o bebê pode pesar 1 kg e medir cerca de 32 cm. '
                   'Já percebe a luz fora do útero, abre e fecha os olhos. Escuta e '
                   'identifica vários sons, como vozes e músicas, e pode se '
                   'assustar com barulhos altos e repentinos. O espaço dentro do '
-                  'útero vai ficar cada vez mais justo. Com 32 semanas já pesa '
-                  '2 kg. Sua pele fica coberta por um tipo de creme branco, o '
+                  'útero vai ficar cada vez mais justo. Com 32 semanas, pode pesar '
+                  'até 2 kg. Sua pele fica coberta por um tipo de creme branco, o '
                   'vérnix, que traz proteção e o ajudará a se deslizar pelo canal '
                   'do parto. É preciso ter paciência para esperar o tempo certo de '
                   'nascer.',

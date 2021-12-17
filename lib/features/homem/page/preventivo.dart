@@ -29,7 +29,7 @@ class Preventivo extends StatelessWidget {
                 'é muito difícil a pessoa recuperar a capacidade de engravidar.'
                 ' Por isso, para optarem pela vasectomia como método '
                 'anticoncepcional, o homem precisa estar seguro de que não '
-                'querem mais ter filhos.',
+                'quer mais ter filhos.',
                 style: TextStyle(
                   fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,

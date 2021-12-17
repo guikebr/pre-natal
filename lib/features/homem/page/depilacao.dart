@@ -21,7 +21,7 @@ class Depilacao extends StatelessWidget {
               padding: const EdgeInsets.all(24),
               child: Text(
                 'Não é necessário depilar completamente os pelos pubianos.'
-                ' Urologistas inclusive, recomendam que não seja realizada.'
+                ' Urologistas inclusive recomendam que está pratica não seja realizada.'
                 ' Recomenda-se manter os pelos pubianos sempre aparados e a '
                 'região sempre limpa evitando o acúmulo de fungos e bactérias.',
                 style: TextStyle(

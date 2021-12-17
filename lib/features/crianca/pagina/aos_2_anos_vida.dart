@@ -57,11 +57,11 @@ class Aos2AnosVida extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  ButtonCircularHome(text: 'VOLTAR', type: TypeHeader.another),
+                  ButtonCircularHome(text: 'VOLTAR', type: TypeHeader.child),
                   ButtonCircularHome(
                     text: 'INÍCIO',
                     page: HomePage(),
-                    type: TypeHeader.another,
+                    type: TypeHeader.child,
                   ),
                 ],
               ),

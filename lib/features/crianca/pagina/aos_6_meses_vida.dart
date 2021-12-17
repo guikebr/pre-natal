@@ -3,8 +3,8 @@ import 'package:pre_natal/core/ui/button_home/button_home.dart';
 import 'package:pre_natal/core/ui/colors/colors.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 
-class Aos6MesesVida extends StatelessWidget {
-  const Aos6MesesVida({Key? key}) : super(key: key);
+class Primeiro6MesesVida extends StatelessWidget {
+  const Primeiro6MesesVida({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,26 +26,30 @@ class Aos6MesesVida extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 18.0),
                   child: Text(
-                    '0 A 6 MESES DE VIDA',
+                    'AOS 6 MESES DE VIDA',
                     style: TextStyle(
-                        fontSize: width * .070,
-                        fontFamily: 'Adobe Arabic',
-                        fontWeight: FontWeight.w500),
+                      fontSize: width * .070,
+                      fontFamily: 'Adobe Arabic',
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Text(
-                'Os primeiros 6 meses de vida deve-se oferecer leite materno '
-                'exclusivo, salvo, quando houver a necessidade de suplementação '
-                'orientado pelo médico pediatra.',
-                style: TextStyle(
-                  fontSize: width * .070,
-                  fontFamily: 'Adobe Arabic',
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 100.0),
+                child: InteractiveViewer(
+                  panEnabled: false,
+                  minScale: 0.5,
+                  maxScale: 5,
+                  boundaryMargin: const EdgeInsets.all(40),
+                  child: Image.asset(
+                    'assets/images/aos_seis_meses.png',
+                    width: width,
+                    fit: BoxFit.fill,
+                  ),
                 ),
-                textAlign: TextAlign.justify,
               ),
             ),
             Padding(
@@ -53,11 +57,11 @@ class Aos6MesesVida extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  ButtonCircularHome(text: 'VOLTAR', type: TypeHeader.another),
+                  ButtonCircularHome(text: 'VOLTAR', type: TypeHeader.child),
                   ButtonCircularHome(
                     text: 'INÍCIO',
                     page: HomePage(),
-                    type: TypeHeader.another,
+                    type: TypeHeader.child,
                   ),
                 ],
               ),

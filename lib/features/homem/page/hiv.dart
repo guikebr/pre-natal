@@ -21,9 +21,9 @@ class HIV extends StatelessWidget {
               child: Text(
                 'Vírus transmitido sexualmente, por compartilhamento de '
                 'seringas e agulhas, por transfusão de sangue ou da mãe para o '
-                'bebê, e que ataca o sistema imunológicohumano, responsável '
+                'bebê, e que ataca o sistema imunológico humano, responsável '
                 'pela defesa do organismo frente a doenças, podendo ocasionar a'
-                ' síndrome da imunodeficiência adquirida (aids). A melhor forma'
+                ' síndrome da imunodeficiência adquirida (AIDS). A melhor forma'
                 ' de prevenir a infecção pelo HIV é usando preservativo em '
                 'todas as relações sexuais. Outras formas biomédicas de se '
                 'prevenir a infecção pelo HIV são a utilização da profilaxia '

@@ -23,7 +23,7 @@ class PosAtoSexual extends StatelessWidget {
                 'Importante é lavar o pênis após a relação sexual a fim de '
                 'ajudar a remoção de resíduos de sêmen e o excesso de '
                 'lubrificante do preservativo. Nas relações sem o uso de '
-                'preservativo a higiene do pênis remove o resíduo de esperma '
+                'preservativo, a higiene do pênis remove o resíduo de esperma '
                 'misturado as secreções vaginais ou anais. A higiene adequada '
                 'pode diminuir a probabilidade de infecção, todavia NÃO garante'
                 ' proteção.',

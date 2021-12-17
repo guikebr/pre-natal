@@ -9,62 +9,62 @@ class PassoPassoCamisinha extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double height = MediaQuery.of(context).size.height;
-
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: SafeArea(
-        child: Stack(
+        child: Column(
           children: [
-            const Align(
-              alignment: Alignment.topRight,
-              child: Header(title: 'Passo a', secondary: 'PASSO'),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: height * .3),
+            const Header(title: 'Passo a', secondary: 'PASSO'),
+            Expanded(
               child: Scrollbar(
                 child: SingleChildScrollView(
                   physics: const BouncingScrollPhysics(),
-                  child: Column(
-                    children: const [
-                      ImageDescription(
-                        'assets/images/passo_um.png',
-                        'Ponha a camisinha quando o pênis estiver duro.',
-                      ),
-                      ImageDescription(
-                        'assets/images/passo_dois.png',
-                        'Aperte a ponta para o ar sair. É aí que o esperma vai ficar.',
-                        directionRight: false,
-                      ),
-                      ImageDescription(
-                        'assets/images/passo_tres.png',
-                        'Desenrole a camisinha até embaixo cuidadosamente.',
-                      ),
-                      ImageDescription(
-                        'assets/images/passo_quatro.png',
-                        'Tire a camisinha com o pênis ainda duro.',
-                        directionRight: false,
-                      ),
-                      ImageDescription(
-                        'assets/images/passo_quinto.png',
-                        'Use a camisinha uma vez só. Dê um nó e jogue no lixo.',
-                      ),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.all(24),
+                    child: Column(
+                      children: const [
+                        ImageDescription(
+                          'assets/images/passo_um.png',
+                          'Ponha a camisinha quando o pênis estiver duro.',
+                        ),
+                        ImageDescription(
+                          'assets/images/passo_dois.png',
+                          'Aperte a ponta para o ar sair. É aí que o esperma vai ficar.',
+                          directionRight: false,
+                        ),
+                        ImageDescription(
+                          'assets/images/passo_tres.png',
+                          'Desenrole a camisinha até embaixo cuidadosamente.',
+                        ),
+                        ImageDescription(
+                          'assets/images/passo_quatro.png',
+                          'Tire a camisinha com o pênis ainda duro.',
+                          directionRight: false,
+                        ),
+                        ImageDescription(
+                          'assets/images/passo_quinto.png',
+                          'Use a camisinha uma vez só. Dê um nó e jogue no lixo.',
+                        ),
+                        SizedBox(height: 50)
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 24, right: 24, bottom: 18),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    ButtonCircularHome(text: 'VOLTAR'),
-                    ButtonCircularHome(text: 'INÍCIO', page: HomePage()),
-                  ],
-                ),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 10,
+                left: 24,
+                right: 24,
+                bottom: 18,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  ButtonCircularHome(text: 'VOLTAR'),
+                  ButtonCircularHome(text: 'INÍCIO', page: HomePage()),
+                ],
               ),
             ),
           ],

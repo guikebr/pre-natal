@@ -15,7 +15,7 @@ class Hepatites extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Header(title: 'HEPATITIES', secondary: 'VIRAIS'),
+          const Header(title: 'HEPATITES', secondary: 'VIRAIS'),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(24),
@@ -24,7 +24,7 @@ class Hepatites extends StatelessWidget {
                 'cirrose e ao câncer. As hepatites virais são classificadas '
                 'pelas letras A, B, C, D, E, sendo as hepatites B e C mais '
                 'prevalentes na população masculina. São preveníveis por meio '
-                'de ações, como: o uso de preservativos; o não compartilhamento'
+                'de ações, como: o uso de preservativos, o não compartilhamento'
                 ' de objetos pessoais (como escovas de dentes) e de '
                 'perfurocortantes (seringas, agulhas, lâminas de barbear e '
                 'kits para manicure, por exemplo). Boas práticas de higiene '

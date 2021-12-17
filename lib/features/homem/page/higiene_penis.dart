@@ -30,7 +30,7 @@ class HigienePenis extends StatelessWidget {
                 ButtonHome(title: 'NO BANHO', page: Banho()),
                 ButtonHome(title: 'APÓS O ATO SEXUAL', page: PosAtoSexual()),
                 ButtonHome(title: 'DEPILAÇÃO', page: Depilacao()),
-                ButtonHome(title: 'ROUPAS INTIMAS', page: RoupasIntimas()),
+                ButtonHome(title: 'ROUPAS ÍNTIMAS', page: RoupasIntimas()),
               ]
                   .map(
                     (e) => Padding(

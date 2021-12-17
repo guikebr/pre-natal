@@ -17,7 +17,7 @@ class LeiAcompanhante extends StatelessWidget {
         children: [
           const Header(
             type: TypeHeader.women,
-            title: 'Acopanhante',
+            title: 'Acompanhante',
             secondary: 'lei',
           ),
           Expanded(

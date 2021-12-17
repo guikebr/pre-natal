@@ -27,7 +27,7 @@ class SinaisSintomas extends StatelessWidget {
                 '\n\n- sangue na urina;'
                 '\n\n- diminuição do jato de urina;'
                 '\n\n- necessidade de urinar mais vezes durante o dia ou '
-                'là noite.',
+                'à noite.',
                 style: TextStyle(
                   fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,

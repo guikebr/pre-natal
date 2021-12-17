@@ -20,11 +20,11 @@ class HPV extends StatelessWidget {
               padding: const EdgeInsets.all(24),
               child: Text(
                 'Vírus capaz de induzir lesões na pele ou mucosas, que podem '
-                'estar associados, em homens, a cânceres de ânus, pênis, '
+                'estar associados em homens, a cânceres de ânus, pênis, '
                 'cavidade oral, orofaringe, laringe e esôfago. A principal via '
                 'de transmissão do HPV é a relação sexual, vaginal e anal, '
                 'desprotegida, tanto em homens como em mulheres. Uma das '
-                'formas de prevenção é ouso de preservativo durante o ato '
+                'formas de prevenção é o uso de preservativo durante o ato '
                 'sexual e vacinação oferecida pelo SUS a meninos e meninas. ',
                 style: TextStyle(
                   fontFamily: 'Adobe Hebrew',

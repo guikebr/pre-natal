@@ -67,7 +67,7 @@ class SaudeGestante extends StatelessWidget {
                             page: TipoParto(),
                           ),
                           const ButtonHome(
-                            title: 'LEI ACOMPANHATE',
+                            title: 'LEI ACOMPANHANTE',
                             page: LeiAcompanhante(),
                             type: TypeHeader.women,
                           ),

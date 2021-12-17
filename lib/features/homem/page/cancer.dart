@@ -17,7 +17,7 @@ class Cancer extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Header(title: 'CÂNCER DE', secondary: 'PROSTATA'),
+          const Header(title: 'CÂNCER DE', secondary: 'PRÓSTATA'),
           Expanded(
             child: Column(
               mainAxisSize: MainAxisSize.min,

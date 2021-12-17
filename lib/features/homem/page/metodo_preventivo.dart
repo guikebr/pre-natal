@@ -33,7 +33,7 @@ class MetodoPreventivo extends StatelessWidget {
                   title: 'CAMISINHA MASCULINA',
                   page: CamisinhaMasculina(),
                 ),
-                ButtonHome(title: 'VASECTOMIAL', page:  CirurgiaVasectomia()),
+                ButtonHome(title: 'VASECTOMIA', page:  CirurgiaVasectomia()),
               ]
                   .map(
                     (e) => Padding(

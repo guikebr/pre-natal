@@ -28,7 +28,6 @@ class ButtonHome extends StatelessWidget {
         ),
       ],
       child: Container(
-        height: 32,
         alignment: Alignment.centerLeft,
         width: width * .6,
         decoration: BoxDecoration(
@@ -39,13 +38,17 @@ class ButtonHome extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.only(left: 16),
+          padding: const EdgeInsets.only(
+            left: 16,
+            top: 8,
+            bottom: 8,
+            right: 32,
+          ),
           child: Text(
             title,
-            textAlign: TextAlign.justify,
-            style: const TextStyle(
-              fontSize: 15,
-              color: Color(0xffffffff),
+            style: TextStyle(
+              fontSize: width * .04,
+              color: const Color(0xffffffff),
               fontFamily: 'Adobe Hebrew',
             ),
           ),

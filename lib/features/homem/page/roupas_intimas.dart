@@ -21,7 +21,7 @@ class RoupasIntimas extends StatelessWidget {
               padding: const EdgeInsets.all(24),
               child: Text(
                 'Os melhores modelos indicados para melhora da circulação de '
-                'ar na região genital são as cuecas samba canção ou boxer, por '
+                'ar na região genital são as cuecas do estilo samba canção, por '
                 'serem mais folgadas. As cuecas de algodão são mais macias e '
                 'confortáveis e absorvem melhor a transpiração do que as de '
                 'tecido sintético.',

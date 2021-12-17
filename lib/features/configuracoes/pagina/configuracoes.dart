@@ -52,7 +52,7 @@ class Configuracoes extends StatelessWidget {
                         const ButtonHome(title: 'AUTORES', page: Autores()),
                         const ButtonHome(title: 'O APP', page: SobreApp()),
                         const ButtonHome(
-                          title: 'REFÊNCIA',
+                          title: 'REFERÊNCIAS',
                           page: Referencia(),
                         ),
                       ]

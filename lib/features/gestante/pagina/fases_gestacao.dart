@@ -39,17 +39,17 @@ class FasesGestacao extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const ButtonHome(
-                          title: '1° AO 3° TRIMESTRE',
+                          title: '1° AO 3° MÊS',
                           page: FaseTrimestre1Ao3(),
                           type: TypeHeader.women,
                         ),
                         const ButtonHome(
-                          title: '4° AO 6° TRIMESTRE',
+                          title: '4° AO 6° MÊS',
                           page: FaseTrimestre4Ao6(),
                           type: TypeHeader.women,
                         ),
                         const ButtonHome(
-                          title: '7° AO NASCIMENTO',
+                          title: '7° MÊS AO NASCIMENTO',
                           page: FaseTrimestre7AoNascimento(),
                           type: TypeHeader.women,
                         ),

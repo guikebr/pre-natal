@@ -57,13 +57,13 @@ class SaudeHomem extends StatelessWidget {
                       title: 'HIGIENIZAÇÃO DO PÊNIS',
                       page: HigienePenis(),
                     ),
-                    ButtonHome(title: 'PROSTATA', page: Cancer()),
+                    ButtonHome(title: 'PRÓSTATA', page: Cancer()),
                     ButtonHome(
                       title: 'MÉTODO PREVENTIVO',
                       page: MetodoPreventivo(),
                     ),
                     ButtonHome(
-                      title: 'INFECÇOES SEXUAIS',
+                      title: 'INFECÇÕES SEXUAIS',
                       page: InfeccoesSexuais(),
                     ),
                     ButtonHome(
@@ -85,9 +85,9 @@ class SaudeHomem extends StatelessWidget {
             ),
           ),
           const Align(
-            alignment: Alignment.bottomCenter,
+            alignment: Alignment.bottomRight,
             child: Padding(
-              padding: EdgeInsets.only(bottom: 10.0, left: 24.0),
+              padding: EdgeInsets.only(bottom: 10.0, right: 24),
               child: ButtonCircularHome(text: 'INÍCIO'),
             ),
           ),

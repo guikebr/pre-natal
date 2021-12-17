@@ -19,27 +19,30 @@ class Prevencao extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(24),
-              child: Text(
-                'Uma dieta rica em frutas, verduras, legumes, grãos e cereais '
-                'integrais, e com menos gordura,  ajuda a diminuir o risco de '
-                'câncer, como também de outras doenças crônicas '
-                'não-transmissíveis. Outros hábitos saudáveis são recomendados, '
-                'como :'
-                '\n\nEntre os fatores que ajudam a prevenir o câncer de próstata'
-                ' estão:'
-                '\n\n- Ter uma alimentação saudável.'
-                '\n\n- Manter o peso corporal adequado.'
-                '\n\n- Praticar atividade física.'
-                '\n\n- Não fumar.'
-                '\n\n- Evitar o consumo de bebidas alcoólicas.'
-                '\n\n- Realização de exames preventivos de acordo com a '
-                'orientação do médico.',
-                style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
-                  fontSize: width * .040,
-                  color: const Color(0xd9000000),
-                ),
-                textAlign: TextAlign.justify,
+              child: ListView(
+                physics: const BouncingScrollPhysics(),
+                children: [
+                  Text(
+                    'Uma dieta rica em frutas, verduras, legumes, grãos e cereais '
+                    'integrais, e com menos gordura,  ajuda a diminuir o risco de '
+                    'câncer, como também de outras doenças crônicas '
+                    'não-transmissíveis. Outros hábitos saudáveis são recomendados, '
+                    'como:'
+                    '\n\n- Ter uma alimentação saudável.'
+                    '\n\n- Manter o peso corporal adequado.'
+                    '\n\n- Praticar atividade física.'
+                    '\n\n- Não fumar.'
+                    '\n\n- Evitar o consumo de bebidas alcoólicas.'
+                    '\n\n- Realização de exames preventivos de acordo com a '
+                    'orientação do médico.',
+                    style: TextStyle(
+                      fontFamily: 'Adobe Hebrew',
+                      fontSize: width * .040,
+                      color: const Color(0xd9000000),
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ],
               ),
             ),
           ),

@@ -25,7 +25,7 @@ class InfeccoesSexuais extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                ButtonHome(title: 'HEPATITIES', page: Hepatites()),
+                ButtonHome(title: 'HEPATITES', page: Hepatites()),
                 ButtonHome(title: 'HIV', page: HIV()),
                 ButtonHome(title: 'SÍFILIS', page: Sifilis()),
                 ButtonHome(title: 'HPV', page: HPV()),

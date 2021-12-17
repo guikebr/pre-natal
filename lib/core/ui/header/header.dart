@@ -17,14 +17,19 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
 
-    final EdgeInsets paddingTitle =
-        hasSpacing ? const EdgeInsets.only(right: 4) : EdgeInsets.zero;
+    final EdgeInsets paddingTitle = hasSpacing
+        ? const EdgeInsets.only(
+            right: 4,
+          )
+        : EdgeInsets.zero;
 
-    final EdgeInsets padding =
-        hasSpacing ? const EdgeInsets.only(left: 4) : EdgeInsets.zero;
+    final EdgeInsets padding = hasSpacing
+        ? const EdgeInsets.only(
+            left: 4,
+          )
+        : EdgeInsets.zero;
 
     return SafeArea(
       child: Column(
@@ -48,27 +53,19 @@ class Header extends StatelessWidget {
                 ),
               ),
               Container(
-                width: width * .37,
-                height: height * .33,
-                child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: padding,
-                          child: Text(
-                            secondary.toUpperCase(),
-                            style: TextStyle(
-                              fontFamily: 'Adobe Arabic',
-                              fontSize: width * .065,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      )
-                    ],
+                width: 145,
+                height: 255,
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: padding,
+                  child: Text(
+                    secondary.toUpperCase(),
+                    style: TextStyle(
+                      fontFamily: 'Adobe Arabic',
+                      fontSize: width * .065,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
                 decoration: BoxDecoration(

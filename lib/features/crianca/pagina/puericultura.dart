@@ -34,7 +34,7 @@ class Puericultura extends StatelessWidget {
                       Text(
                         'Nas consultas periódicas, o enfermeiro observa a criança, indaga'
                         ' aos pais sobre as atividades do filho, reações frente a '
-                        'estímulose realiza o exame clínico. Quanto mais nova a criança, '
+                        'estímulos e realiza o exame clínico. Quanto mais nova a criança, '
                         'mais frágil e vulnerável, daí a necessidade de consultas mais '
                         'frequentes.\nEm cada consulta o enfermeiro vai pedir informações'
                         ' de como a criança se alimenta, se as vacinas estão em dia, '

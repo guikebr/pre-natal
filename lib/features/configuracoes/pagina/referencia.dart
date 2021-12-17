@@ -13,7 +13,7 @@ class Referencia extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const Header(title: 'REF', hasSpacing: false, secondary: 'ERÊNCIA'),
+            const Header(title: 'REF', hasSpacing: false, secondary: 'ERÊNCIAS'),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(24.0),

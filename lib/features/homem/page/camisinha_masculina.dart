@@ -24,13 +24,12 @@ class CamisinhaMasculina extends StatelessWidget {
               child: Text(
                 'É uma capa fina de borracha que cobre o pênis durante a '
                 'relação sexual, para impedir o contato do pênis com a vagina,'
-                ' com o ânus, com a boca. A camisinha funciona como uma '
-                'barreira. O esperma ejaculado pelo homem fica retido na '
+                ' ânus e boca. A camisinha funciona como uma barreira,'
+                'o esperma ejaculado pelo homem fica retido na '
                 'camisinha, assim os espermatozóides não entram no corpo da(o)'
-                ' parceira(o).A camisinha masculina é eficaz para proteger da '
-                'gravidez e de IST/HIV/AIDS quando usada em todas as relações '
-                'sexuais, antes de qualquer contato do pênis com a vagina, com'
-                ' o ânus ou com a boca.',
+                ' parceira(o). A camisinha masculina é eficaz para proteger da '
+                'gravidez e de IST/HIV/AIDS, quando usada em todas as relações '
+                'sexuais.',
                 style: TextStyle(
                   fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,

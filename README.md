@@ -117,3 +117,7 @@ A new Flutter project.
 - Criando tela de saúde do homem -> "INFECÇÕES SEXUAIS" -> "MENU" -> "HPV";
 - Criando tela de saúde do homem -> "FOTOGESTAÇÃO" (TELA);
 - Tempo de trabalho 2h30m00s. 150min
+
+# Quinta, 16 Dezebro 2021
+- Realizado as correções da orientadora;
+- Tempo de trabalho 1h34m19s. 94min

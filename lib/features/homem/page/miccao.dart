@@ -22,9 +22,9 @@ class Miccao extends StatelessWidget {
               child: Text(
                 'Lavar as mão antes de urinar é muito importante, porque '
                 'diminui o risco de levar bactérias e fungos para a região '
-                'genital. Embora não exista o hábito, também é preciso enxugar '
+                'genital. Embora não seja comum, também é preciso enxugar '
                 'o pênis com papel higiênico após urinar. As gotas de urina que'
-                ' ficam na cueca quando em contato com a pele podem provocar '
+                ' ficam na cueca, quando em contato com a pele, podem provocar '
                 'uma inflamação local ou mesmo infecções fúngicas.',
                 style: TextStyle(
                   fontFamily: 'Adobe Hebrew',
