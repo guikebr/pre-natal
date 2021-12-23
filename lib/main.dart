@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:pre_natal/features/splash_screen/pages/splash_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  GetStorage.init().whenComplete(
+    () => SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]).whenComplete(
+      () => runApp(const MyApp()),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {

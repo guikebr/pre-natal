@@ -6,12 +6,14 @@ class ButtonCircularHome extends StatelessWidget {
   const ButtonCircularHome({
     required this.text,
     this.page,
+    this.function,
     this.initialHome = false,
     this.type = TypeHeader.man,
     Key? key,
   }) : super(key: key);
 
   final Widget? page;
+  final Function? function;
   final String text;
   final bool initialHome;
   final TypeHeader type;
@@ -27,7 +29,7 @@ class ButtonCircularHome extends StatelessWidget {
           transition: LinkTransition.Fade,
           ease: Curves.easeOut,
           duration: 0.3,
-          pageBuilder: page != null ? () => page : null,
+          pageBuilder: function ?? (page != null ? () => page : null),
         ),
       ],
       child: Material(

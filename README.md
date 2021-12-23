@@ -121,3 +121,7 @@ A new Flutter project.
 # Quinta, 16 Dezebro 2021
 - Realizado as correções da orientadora;
 - Tempo de trabalho 1h34m19s. 94min
+
+# Quinta, 18 Dezebro 2021
+- Criando tela de saúde do homem -> "FOTOGESTAÇÃO";
+- Tempo de trabalho 3h48m35s. 228 min
