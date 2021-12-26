@@ -3,6 +3,7 @@ import 'package:pre_natal/core/ui/button_home/button_home.dart';
 import 'package:pre_natal/core/ui/header/header.dart';
 import 'package:pre_natal/features/home/pagina/home_page.dart';
 import 'package:pre_natal/features/home/pagina/widget/button_home.dart';
+import 'package:pre_natal/features/homem/page/agendar_pre_natal/agendamento.dart';
 
 class AgendaPreNatal extends StatelessWidget {
   const AgendaPreNatal({Key? key}) : super(key: key);
@@ -21,9 +22,9 @@ class AgendaPreNatal extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                ButtonHome(title: '1º TRIMESTRE', page: PageDefault()),
-                ButtonHome(title: '2º TRIMESTRE', page: PageDefault()),
-                ButtonHome(title: '3º TRIMESTRE', page: PageDefault()),
+                ButtonHome(title: '1º TRIMESTRE', page: Agendamento('1')),
+                ButtonHome(title: '2º TRIMESTRE', page: Agendamento('2')),
+                ButtonHome(title: '3º TRIMESTRE', page: Agendamento('3')),
               ]
                   .map(
                     (e) => Padding(

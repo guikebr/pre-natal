@@ -5,7 +5,7 @@ import 'package:pre_natal/features/calendarios/pagina/calendario_vacina_adulto.d
 import 'package:pre_natal/features/home/pagina/widget/button_home.dart';
 import 'package:pre_natal/features/homem/page/conceito_pre_natal.dart';
 import 'package:pre_natal/features/homem/page/metodo_preventivo.dart';
-import 'agenda_pre_natal.dart';
+import 'agendar_pre_natal/agenda_pre_natal.dart';
 import 'exame_pre_natal.dart';
 import 'higiene_penis.dart';
 import 'cancer.dart';

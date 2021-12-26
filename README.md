@@ -125,3 +125,7 @@ A new Flutter project.
 # Quinta, 18 Dezebro 2021
 - Criando tela de saúde do homem -> "FOTOGESTAÇÃO";
 - Tempo de trabalho 3h48m35s. 228 min
+
+# Domingo, 26 de dezembro 2021
+- Criado tela de saúde do homem -> "Agendar pré-natal" -> "Agendamento"
+- Tempo de trabalho 1h41m47s. 111 min

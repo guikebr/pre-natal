@@ -22,7 +22,7 @@ class _FotosGestaoState extends State<FotosGestao> {
   final int numeroImagens = 9;
   final Map<String, File> photos = {};
 
-  final CacheStorage cacheStorage = CacheStorage();
+  CacheStorage get cacheStorage => CacheStorage();
 
   @override
   void initState() {
@@ -33,9 +33,7 @@ class _FotosGestaoState extends State<FotosGestao> {
   void readyImages() {
     for (int i = 0; i < numeroImagens; i++) {
       final Either<Failure, String> foundImage = cacheStorage.read(key: '$i');
-      print("foundImage: $foundImage");
       if (foundImage.isRight) {
-        print("image: ${foundImage.right}");
         if (foundImage.right.isNotEmpty) {
           photos[i.toString()] = File(foundImage.right);
         }
@@ -52,7 +50,6 @@ class _FotosGestaoState extends State<FotosGestao> {
             photos[name] = file;
             if (photos[name]?.path != null) {
               await cacheStorage.write(key: name, value: photos[name]!.path);
-              print('saved');
             }
             Navigator.pop(context);
             setState(() {});
@@ -62,11 +59,15 @@ class _FotosGestaoState extends State<FotosGestao> {
     );
   }
 
-  Future<void> openImage(String name) async {
+  Future<void> openImage(String name, BuildContext context) async {
     final result = await Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (_) => ImagePage(image: photos[name], name: name),
+        builder: (_) => ImagePage(
+          image: photos[name],
+          name: name,
+          cacheStorage: cacheStorage,
+        ),
       ),
     );
 
@@ -99,13 +100,16 @@ class _FotosGestaoState extends State<FotosGestao> {
                         padding: const EdgeInsets.symmetric(vertical: 6.0),
                         child: ButtonHome(
                           title: '$indexº MÊS',
-                          page: Container(),
+                          page: const SizedBox.shrink(),
                           type: photos['$index'] == null
                               ? TypeHeader.disabled
                               : TypeHeader.man,
                           onTap: photos['$index'] == null
                               ? () => openCamera('$index')
-                              : () async => await openImage(i.toString()),
+                              : () async => await openImage(
+                                    index.toString(),
+                                    context,
+                                  ),
                         ),
                       );
                     },
@@ -131,16 +135,16 @@ class _FotosGestaoState extends State<FotosGestao> {
 }
 
 class ImagePage extends StatelessWidget {
-  ImagePage({
+  const ImagePage({
     required this.image,
     required this.name,
+    required this.cacheStorage,
     Key? key,
   }) : super(key: key);
 
   final String name;
   final File? image;
-
-  final CacheStorage cacheStorage = CacheStorage();
+  final CacheStorage cacheStorage;
 
   removerImage(BuildContext context) {
     cacheStorage.remove(key: name);
