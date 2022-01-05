@@ -32,7 +32,6 @@ class Banho extends StatelessWidget {
                 ' prepúcio estreita a passagem da glândula facilitando o '
                 'acúmulo de sujidades.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

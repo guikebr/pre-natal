@@ -22,32 +22,59 @@ class Aos11MesesVida extends StatelessWidget {
               width: width,
               height: height * .1,
               color: const Color(0xff7BBEB9),
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 18.0),
-                  child: Text(
-                    '9 A 11 MESES DE VIDA',
-                    style: TextStyle(
-                      fontSize: width * .070,
-                      fontFamily: 'Adobe Arabic',
-                      fontWeight: FontWeight.w500,
-                    ),
+              alignment: Alignment.bottomCenter,
+              child: const Padding(
+                padding: EdgeInsets.only(bottom: 12),
+                child: Text(
+                  '9 A 11 MESES DE VIDA',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontFamily: 'Adobe Arabic',
+                    letterSpacing: 2,
                   ),
                 ),
               ),
             ),
             Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 100.0),
-                child: InteractiveViewer(
-                  panEnabled: false,
-                  minScale: 0.5,
-                  maxScale: 5,
-                  boundaryMargin: const EdgeInsets.all(40),
-                  child: Image.asset(
-                    'assets/images/aos_9_11_meses.png',
-                    width: width,
-                    fit: BoxFit.fill,
+              child: Scrollbar(
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      ListTile(
+                        title: Text(
+                          'O leite materno pode ser oferecido sempre que a criança quiser.',
+                        ),
+                      ),
+                      ListTile(
+                        title: Text('Café da manhã:'),
+                        subtitle: Text('- Leite materno'),
+                      ),
+                      ListTile(
+                        title: Text('Lanche da manhã e da tarde:'),
+                        subtitle: Text(' - Fruta e leite materno.'),
+                      ),
+                      ListTile(
+                        title: Text('Almoço e jantar:'),
+                        subtitle: Text(
+                          'É recomendado que o prato da criança tenha:\n\n'
+                              '- 1 alimento do grupo dos cereais ou raízes e tubérculos;'
+                              '\n- 1 alimento do grupo dos feijões;'
+                              '\n- 1 ou mais alimentos do grupo dos legumes e verduras;'
+                              '\n- 1 alimento do grupo das carnes e ovos.'
+                              '\n\nJunto à refeição, pode ser dado um pedaço pequeno de fruta.'
+                              'Quantidade aproximada - 4 a 5 colheres de sopa no total. Essa'
+                              'quantidade serveapenas para a familia ter alguma referência'
+                              'e não deve ser seguida de forma rígida, uma vez que as '
+                              'características individuais da crinça devem ser respeitadas.',
+                        ),
+                      ),
+                      ListTile(
+                        title: Text('Antes de dormir:'),
+                        subtitle: Text(' - Leite materno.'),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -57,11 +84,11 @@ class Aos11MesesVida extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  ButtonCircularHome(text: 'VOLTAR', type: TypeHeader.another),
+                  ButtonCircularHome(text: 'VOLTAR', type: TypeHeader.child),
                   ButtonCircularHome(
                     text: 'INÍCIO',
                     page: HomePage(),
-                    type: TypeHeader.another,
+                    type: TypeHeader.child,
                   ),
                 ],
               ),

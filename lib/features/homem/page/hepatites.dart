@@ -32,7 +32,6 @@ class Hepatites extends StatelessWidget {
                 'tipos de hepatites virais, como A e E. Outra forma de '
                 'prevenção é a vacinação contra as hepatites.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

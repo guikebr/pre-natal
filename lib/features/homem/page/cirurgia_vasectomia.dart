@@ -20,19 +20,18 @@ class CirurgiaVasectomia extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(24),
               child: Text(
-                'Cirurgia simples, segura e rápida. É um método '
-                'anticoncepcional considerado permanente ou irreversível, '
-                'porque, depois de feita a cirurgia, é muito difícil recuperar '
-                'a capacidade de ter filhos. Nessa cirurgia, os canais '
-                'deferentes são cortados e amarrados, cauterizados ou fechados'
-                ' com grampos. \nÉ uma cirurgia simples, que pode ser feita em '
-                'ambulatório, com anestesia local e o homem não precisa ficar '
-                'internado.\nA vasectomia age impedindo que os espermatozóides '
-                'se encontrem com o óvulo.\nA vasectomia, mesmo sendo uma '
-                'operação simples, tem riscos e pode apresentar problemas como '
-                'qualquer outra cirurgia.',
+                'Cirurgia simples, segura e rápida. É um método anticoncepcional '
+                'considerado permanente ou irreversível, porque, depois de '
+                'feita a cirurgia, é muito difícil recuperar a capacidade de ter '
+                'filhos. Nessa cirurgia, os canais deferentes são cortados e '
+                'amarrados, cauterizados, ou fechados com grampos. '
+                '\nA cirurgia pode ser feita em ambulatório, com anestesia'
+                'local e o homem não precisa ficar internado.'
+                '\nA vasectomia age impedindo que os espermatozóides se '
+                'encontrem com o óvulo.'
+                '\nA vasectomia, mesmo sendo uma operação simples, tem riscos'
+                'e pode apresentar problemas como qualquer outra cirurgia',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

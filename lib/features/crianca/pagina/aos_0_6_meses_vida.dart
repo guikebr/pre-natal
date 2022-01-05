@@ -22,30 +22,24 @@ class Aos6MesesVida extends StatelessWidget {
               width: width,
               height: height * .1,
               color: const Color(0xff7BBEB9),
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 18.0),
-                  child: Text(
-                    '0 A 6 MESES DE VIDA',
-                    style: TextStyle(
-                      fontSize: width * .070,
-                      fontFamily: 'Adobe Arabic',
-                      fontWeight: FontWeight.w500,
-                    ),
+              alignment: Alignment.bottomCenter,
+              child: const Padding(
+                padding: EdgeInsets.only(bottom: 12.0),
+                child: Text(
+                  '0 A 6 MESES DE VIDA',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontFamily: 'Adobe Arabic',
+                    letterSpacing: 2,
                   ),
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Text(
+            const ListTile(
+              title: Text(
                 'Os primeiros 6 meses de vida deve-se oferecer leite materno '
                 'exclusivo, salvo, quando houver a necessidade de suplementação '
                 'orientado pelo médico pediatra.',
-                style: TextStyle(
-                  fontSize: width * .070,
-                  fontFamily: 'Adobe Arabic',
-                ),
                 textAlign: TextAlign.justify,
               ),
             ),

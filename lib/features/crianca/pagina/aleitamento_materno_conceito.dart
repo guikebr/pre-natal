@@ -32,7 +32,6 @@ class AleitamentoMaternoConceito extends StatelessWidget {
                 'amamentada, como diarreias, infecções  respiratórias, infecções '
                 'de ouvidos (otites) e outras.\n\n',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: 15,
                   color: Color(0xd9000000),
                 ),

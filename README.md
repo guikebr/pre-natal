@@ -129,3 +129,8 @@ A new Flutter project.
 # Domingo, 26 de dezembro 2021
 - Criado tela de saúde do homem -> "Agendar pré-natal" -> "Agendamento"
 - Tempo de trabalho 1h41m47s. 111 min
+
+# Domingo, 05 de janeiro 2022
+- Realizado as correções da orientadora;
+- Criado tela de saúde da criança -> "Introdução alimentar" -> Atualização de todas as telas.
+- Tempo de trabalho 1h42m48s. 112 min

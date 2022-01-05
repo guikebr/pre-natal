@@ -31,7 +31,6 @@ class HIV extends StatelessWidget {
                 'tratamento como prevenção (TasP), além do incentivo a '
                 'intervenções comportamentais e estruturais.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

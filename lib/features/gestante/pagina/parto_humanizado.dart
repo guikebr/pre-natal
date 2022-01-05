@@ -31,7 +31,6 @@ class PartoHumanizado extends StatelessWidget {
                 ' ter o uso de anestesia e ainda é possível escolher se quer '
                 'comer alguma coisa durante o trabalho de parto.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: 15,
                   color: Color(0xd9000000),
                 ),

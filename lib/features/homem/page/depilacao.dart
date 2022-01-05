@@ -25,7 +25,6 @@ class Depilacao extends StatelessWidget {
                 ' Recomenda-se manter os pelos pubianos sempre aparados e a '
                 'região sempre limpa evitando o acúmulo de fungos e bactérias.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

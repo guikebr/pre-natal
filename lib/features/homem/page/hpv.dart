@@ -27,7 +27,6 @@ class HPV extends StatelessWidget {
                 'formas de prevenção é o uso de preservativo durante o ato '
                 'sexual e vacinação oferecida pelo SUS a meninos e meninas. ',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

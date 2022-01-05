@@ -26,7 +26,7 @@ class FaseTrimestre7AoNascimento extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 16.0),
                     child: Container(
-                      width: width * 0.55,
+                      width: width * 0.50,
                       height: height * .4,
                       // margin: EdgeInsets.all(30),
                       decoration: BoxDecoration(
@@ -47,7 +47,7 @@ class FaseTrimestre7AoNascimento extends StatelessWidget {
                     alignment: Alignment.centerRight,
                     child: Header(
                       type: TypeHeader.women,
-                      title: '7° MÊS ao',
+                      title: '7° MÊS\nAO',
                       secondary: 'Nascimento',
                     ),
                   ),

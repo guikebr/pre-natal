@@ -31,7 +31,6 @@ class CamisinhaMasculina extends StatelessWidget {
                 'gravidez e de IST/HIV/AIDS, quando usada em todas as relações '
                 'sexuais.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

@@ -26,7 +26,6 @@ class RoupasIntimas extends StatelessWidget {
                 'confortáveis e absorvem melhor a transpiração do que as de '
                 'tecido sintético.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

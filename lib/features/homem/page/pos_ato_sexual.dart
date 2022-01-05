@@ -28,7 +28,6 @@ class PosAtoSexual extends StatelessWidget {
                 'pode diminuir a probabilidade de infecção, todavia NÃO garante'
                 ' proteção.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

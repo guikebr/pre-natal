@@ -25,7 +25,6 @@ class ImageDescription extends StatelessWidget {
               child: Text(
                 description,
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),
@@ -58,7 +57,6 @@ class ImageDescription extends StatelessWidget {
               child: Text(
                 description,
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

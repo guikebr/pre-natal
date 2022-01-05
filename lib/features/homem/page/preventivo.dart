@@ -31,7 +31,6 @@ class Preventivo extends StatelessWidget {
                 'anticoncepcional, o homem precisa estar seguro de que não '
                 'quer mais ter filhos.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

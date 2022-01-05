@@ -55,7 +55,6 @@ class ButtonHome extends StatelessWidget {
                 style: TextStyle(
                   fontSize: width * .04,
                   color: const Color(0xffffffff),
-                  fontFamily: 'Adobe Hebrew',
                 ),
               ),
             ),

@@ -40,8 +40,8 @@ class Autores extends StatelessWidget {
                         Text(
                           '\n\nDaniel Vinício Dias Ferreira - Mestre em Ensino'
                           ' pela Universidade Estadual do Oeste do Paraná, '
-                          'especialista em docência e enferagem e unidade de '
-                          'terapia intensiva e graduação em Enfermagem pelo '
+                          'Especialista em Docência em Enfermagem e Unidade de '
+                          'Terapia Intensiva e Graduação em Enfermagem pelo '
                           'Centro Universitário Uniamérica. '
                           'Docente da Universidade Veiga de Almeida.',
                           style: TextStyle(

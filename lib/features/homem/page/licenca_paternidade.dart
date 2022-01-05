@@ -33,7 +33,6 @@ class LicencaPaternidade extends StatelessWidget {
                 'ampliação da licença-paternidade em mais 15 dias para os '
                 'funcionários das empresas cidadãs.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

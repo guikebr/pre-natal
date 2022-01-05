@@ -22,32 +22,75 @@ class Aos2AnosVida extends StatelessWidget {
               width: width,
               height: height * .1,
               color: const Color(0xff7BBEB9),
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 18.0),
-                  child: Text(
-                    '1 A 2 ANOS DE VIDA',
-                    style: TextStyle(
-                      fontSize: width * .070,
-                      fontFamily: 'Adobe Arabic',
-                      fontWeight: FontWeight.w500,
-                    ),
+              alignment: Alignment.bottomCenter,
+              child: const Padding(
+                padding: EdgeInsets.only(bottom: 12),
+                child: Text(
+                  '1 A 2 ANOS DE VIDA',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontFamily: 'Adobe Arabic',
+                    letterSpacing: 2,
                   ),
                 ),
               ),
             ),
             Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 100.0),
-                child: InteractiveViewer(
-                  panEnabled: false,
-                  minScale: 0.5,
-                  maxScale: 5,
-                  boundaryMargin: const EdgeInsets.all(40),
-                  child: Image.asset(
-                    'assets/images/aos_1_2_anos.png',
-                    width: width,
-                    fit: BoxFit.fill,
+              child: Scrollbar(
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      ListTile(
+                        title: Text(
+                          'O leite materno pode ser oferecido sempre que a criança quiser.',
+                        ),
+                      ),
+                      ListTile(
+                        title: Text('Café da manhã:'),
+                        subtitle: Text('- Leite materno'),
+                      ),
+                      ListTile(
+                        title: Text('Lanche da manhã:'),
+                        subtitle: Text(' - Fruta e leite materno.'),
+                      ),
+                      ListTile(
+                        title: Text('Almoço e jantar:'),
+                        subtitle: Text(
+                          'É recomendado que o prato da criança tenha:\n\n'
+                          '- 1 alimento do grupo dos cereais ou raízes e tubérculos;'
+                          '\n- 1 alimento do grupo dos feijões;'
+                          '\n- 1 ou mais alimentos do grupo dos legumes e verduras;'
+                          '\n- 1 alimento do grupo das carnes e ovos.'
+                          '\n\nJunto à refeição, pode ser dado um pedaço pequeno de fruta.'
+                          'Quantidade aproximada - 5 a 6 colheres de sopa no total. Essa'
+                          'quantidade serveapenas para a familia ter alguma referência'
+                          'e não deve ser seguida de forma rígida, uma vez que as '
+                          'características individuais da crinça devem ser respeitadas.',
+                        ),
+                      ),
+                      ListTile(
+                        title: Text('Lanche da tarde:'),
+                        subtitle: Text.rich(
+                          TextSpan(
+                            text: '- Leite materno e fruta',
+                            children: [
+                              TextSpan(
+                                text: ' ou\n',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              TextSpan(
+                                text: '- Leite materno e cereal (pães caseiros,'
+                                    ' pães processados, aveia, cuscuz de milho) '
+                                    'ou raízes e tubérculos (aipim/macaxeira, '
+                                    'batata).',
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),

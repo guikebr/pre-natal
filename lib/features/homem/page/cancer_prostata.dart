@@ -32,7 +32,6 @@ class CancerPropostata extends StatelessWidget {
                 'crescer rapidamente, se espalhar para outros órgãos e causar a'
                 ' morte. Esse efeito é conhecido como metástase.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

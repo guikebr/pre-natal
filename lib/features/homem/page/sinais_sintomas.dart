@@ -29,7 +29,6 @@ class SinaisSintomas extends StatelessWidget {
                 '\n\n- necessidade de urinar mais vezes durante o dia ou '
                 'à noite.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

@@ -27,7 +27,6 @@ class Miccao extends StatelessWidget {
                 ' ficam na cueca, quando em contato com a pele, podem provocar '
                 'uma inflamação local ou mesmo infecções fúngicas.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),

@@ -27,7 +27,6 @@ class ConceitoPreNatal extends StatelessWidget {
                 'cuidados com o filho. Dessa forma, o pai passa a ter também um '
                 'acesso melhor para cuidar da própria saúde.',
                 style: TextStyle(
-                  fontFamily: 'Adobe Hebrew',
                   fontSize: width * .040,
                   color: const Color(0xd9000000),
                 ),
