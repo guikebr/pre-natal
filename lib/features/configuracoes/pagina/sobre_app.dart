@@ -33,11 +33,7 @@ class SobreApp extends StatelessWidget {
                           "Aplicativo Móvel para Intervenção Educativa no Pré-natal"
                           " do Homem' da Universidade Estadual do Oeste do Paraná. "
                           "\n\n"
-                          "É gratuito e sem fins lucrativos.  "
-                          "\n\n"
-                          "Registro provisório de propriedade intelectual e "
-                          "patentes de software junto ao instituto Nacional de "
-                          "Propriedade Industrial.",
+                          "É gratuito e sem fins lucrativos.  ",
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
                             fontSize: width * .040,

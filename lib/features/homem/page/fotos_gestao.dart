@@ -31,6 +31,7 @@ class _FotosGestaoState extends State<FotosGestao> {
   }
 
   void readyImages() {
+    photos.clear();
     for (int i = 0; i < numeroImagens; i++) {
       final Either<Failure, String> foundImage = cacheStorage.read(key: '$i');
       if (foundImage.isRight) {
@@ -59,8 +60,8 @@ class _FotosGestaoState extends State<FotosGestao> {
     );
   }
 
-  Future<void> openImage(String name, BuildContext context) async {
-    final result = await Navigator.push(
+  void openImage(String name, BuildContext context) {
+    Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => ImagePage(
@@ -69,12 +70,12 @@ class _FotosGestaoState extends State<FotosGestao> {
           cacheStorage: cacheStorage,
         ),
       ),
-    );
-
-    if (result != null) {
-      readyImages();
-      setState(() {});
-    }
+    ).then((result) {
+      if (result != null) {
+        readyImages();
+        setState(() {});
+      }
+    });
   }
 
   @override
@@ -96,21 +97,22 @@ class _FotosGestaoState extends State<FotosGestao> {
                     numeroImagens,
                     (i) {
                       final int index = i + 1;
-                      return Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 6.0),
-                        child: ButtonHome(
-                          title: '$indexº MÊS',
-                          page: const SizedBox.shrink(),
-                          type: photos['$index'] == null
-                              ? TypeHeader.disabled
-                              : TypeHeader.man,
-                          onTap: photos['$index'] == null
-                              ? () => openCamera('$index')
-                              : () async => await openImage(
-                                    index.toString(),
-                                    context,
-                                  ),
-                        ),
+                      return Builder(
+                        builder: (context) {
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 6.0),
+                            child: ButtonHome(
+                              title: '$indexº MÊS',
+                              page: const SizedBox.shrink(),
+                              type: photos['$index'] == null
+                                  ? TypeHeader.disabled
+                                  : TypeHeader.man,
+                              onTap: photos['$index'] == null
+                                  ? () => openCamera('$index')
+                                  : () => openImage(index.toString(), context),
+                            ),
+                          );
+                        },
                       );
                     },
                   ),
@@ -142,17 +144,20 @@ class ImagePage extends StatelessWidget {
     Key? key,
   }) : super(key: key);
 
-  final String name;
   final File? image;
+  final String name;
   final CacheStorage cacheStorage;
 
-  removerImage(BuildContext context) {
-    cacheStorage.remove(key: name);
+  Future<void> removerImage(BuildContext context) async {
+    await cacheStorage.remove(key: name);
     Navigator.pop(context, true);
   }
 
   @override
   Widget build(BuildContext context) {
+    final double height = MediaQuery.of(context).size.height;
+    final double width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       body: image != null
           ? Column(
@@ -168,9 +173,34 @@ class ImagePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const ButtonCircularHome(text: 'VOLTAR'),
-                      ButtonCircularHome(
-                        text: 'REMOVER',
-                        function: removerImage(context),
+                      GestureDetector(
+                        onTap: () async => await removerImage(context),
+                        child: Material(
+                          elevation: 4,
+                          color: getBackground(TypeHeader.man),
+                          borderRadius: BorderRadius.circular(width * .8),
+                          child: Container(
+                            width: width * .25,
+                            height: height * .04,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              color: getBackground(TypeHeader.man),
+                              border: Border.all(
+                                color: getBackground(TypeHeader.man),
+                              ),
+                              borderRadius: BorderRadius.circular(width * .8),
+                            ),
+                            child: const Text(
+                              'REMOVER',
+                              style: TextStyle(
+                                fontFamily: 'Adobe Hebrew',
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
                       ),
                       const ButtonCircularHome(
                         text: 'INÍCIO',

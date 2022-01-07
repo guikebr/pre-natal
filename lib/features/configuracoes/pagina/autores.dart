@@ -23,13 +23,12 @@ class Autores extends StatelessWidget {
                     child: Column(
                       children: const [
                         Text(
-                          'Adriana Zilly - Mestrado e Doutorado em Ciências '
-                          'Biológicas pela UEM - Universidade Estadual de '
-                          'Maringá e graduação em Ciências Biológicas pela '
-                          'Unioeste/ Cascavel. Docente do curso de Enfermagem, '
-                          'do Programa de Pós Graduação (Mestrado) em Ensino'
-                          ' Programa de Pós Graduação (Mestrado) em Saúde '
-                          'Pública em Região de Fronteira da Unioeste/Foz.',
+                          '\n\nDaniel Vinício Dias Ferreira - Mestre em Ensino'
+                          ' pela Universidade Estadual do Oeste do Paraná, '
+                          'Especialista em Docência em Enfermagem e Unidade de '
+                          'Terapia Intensiva e Graduação em Enfermagem pelo '
+                          'Centro Universitário Uniamérica. '
+                          'Docente da Universidade Veiga de Almeida.',
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
                             fontSize: 16,
@@ -38,12 +37,13 @@ class Autores extends StatelessWidget {
                           textAlign: TextAlign.justify,
                         ),
                         Text(
-                          '\n\nDaniel Vinício Dias Ferreira - Mestre em Ensino'
-                          ' pela Universidade Estadual do Oeste do Paraná, '
-                          'Especialista em Docência em Enfermagem e Unidade de '
-                          'Terapia Intensiva e Graduação em Enfermagem pelo '
-                          'Centro Universitário Uniamérica. '
-                          'Docente da Universidade Veiga de Almeida.',
+                          'Adriana Zilly - Mestrado e Doutorado em Ciências '
+                          'Biológicas pela UEM - Universidade Estadual de '
+                          'Maringá e graduação em Ciências Biológicas pela '
+                          'Unioeste/ Cascavel. Docente do curso de Enfermagem, '
+                          'do Programa de Pós Graduação (Mestrado) em Ensino'
+                          ' Programa de Pós Graduação (Mestrado) em Saúde '
+                          'Pública em Região de Fronteira da Unioeste/Foz.',
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
                             fontSize: 16,

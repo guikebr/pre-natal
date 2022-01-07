@@ -134,3 +134,8 @@ A new Flutter project.
 - Realizado as correções da orientadora;
 - Criado tela de saúde da criança -> "Introdução alimentar" -> Atualização de todas as telas.
 - Tempo de trabalho 1h42m48s. 112 min
+
+# Domingo, 07 de janeiro 2022
+- Realizado correções de código;
+- Realizado auteração na tela de Autores;
+- Realizado auteração na tela de Aplicativo;
