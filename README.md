@@ -127,7 +127,7 @@ A new Flutter project.
 - Tempo de trabalho 3h48m35s. 228 min
 
 # Domingo, 26 de dezembro 2021
-- Criado tela de saúde do homem -> "Agendar pré-natal" -> "Agendamento"
+- Criado tela de saúde do homem -> "Agendar pré-natal" -c> "Agendamento"
 - Tempo de trabalho 1h41m47s. 111 min
 
 # Domingo, 05 de janeiro 2022
@@ -139,3 +139,12 @@ A new Flutter project.
 - Realizado correções de código;
 - Realizado auteração na tela de Autores;
 - Realizado auteração na tela de Aplicativo;
+- Tempo não cobrado
+- Tempo de trabalho 0h30m12s.
+
+
+- 1788 minutos. PAGO
+
+# Terça, 18 Janeiro 2022
+- atualizado referências
+- Tempo de trabalho: 10min

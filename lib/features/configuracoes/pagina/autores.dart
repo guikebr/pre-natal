@@ -23,7 +23,7 @@ class Autores extends StatelessWidget {
                     child: Column(
                       children: const [
                         Text(
-                          '\n\nDaniel Vinício Dias Ferreira - Mestre em Ensino'
+                          'Daniel Vinício Dias Ferreira - Mestre em Ensino'
                           ' pela Universidade Estadual do Oeste do Paraná, '
                           'Especialista em Docência em Enfermagem e Unidade de '
                           'Terapia Intensiva e Graduação em Enfermagem pelo '
@@ -37,7 +37,7 @@ class Autores extends StatelessWidget {
                           textAlign: TextAlign.justify,
                         ),
                         Text(
-                          'Adriana Zilly - Mestrado e Doutorado em Ciências '
+                          '\nAdriana Zilly - Mestrado e Doutorado em Ciências '
                           'Biológicas pela UEM - Universidade Estadual de '
                           'Maringá e graduação em Ciências Biológicas pela '
                           'Unioeste/ Cascavel. Docente do curso de Enfermagem, '

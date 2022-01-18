@@ -13,7 +13,8 @@ class Referencia extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const Header(title: 'REF', hasSpacing: false, secondary: 'ERÊNCIAS'),
+            const Header(
+                title: 'REF', hasSpacing: false, secondary: 'ERÊNCIAS'),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(24.0),
@@ -77,11 +78,55 @@ class Referencia extends StatelessWidget {
                           '2018. 56 p. : il.',
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
-                            fontSize: 17,
+                            fontSize: 16,
                             color: Color(0xff000000),
                           ),
                           textAlign: TextAlign.justify,
-                        )
+                        ),
+                        Text(
+                          '\n- PIXABAY. Father and Son baby. 2016. Disponível em: '
+                          'https://pixabay.com/images/id-1153919/ acesso em: '
+                          '20 abr.',
+                          style: TextStyle(
+                            fontFamily: 'Adobe Hebrew',
+                            fontSize: 16,
+                            color: Color(0xff000000),
+                          ),
+                          textAlign: TextAlign.justify,
+                        ),
+                        Text(
+                          '\n- PIXABAY. Child health. 2019. Disponível em: '
+                          'https://pixabay.com/images/id-2610206/ acesso em: '
+                          '20 jul 2021',
+                          style: TextStyle(
+                            fontFamily: 'Adobe Hebrew',
+                            fontSize: 16,
+                            color: Color(0xff000000),
+                          ),
+                          textAlign: TextAlign.justify,
+                        ),
+                        Text(
+                          "\n- PIXABAY. Women's health. 2016. Disponível em: "
+                          "https://pixabay.com/images/id-5236517/ acesso em: "
+                          "22 jul.",
+                          style: TextStyle(
+                            fontFamily: 'Adobe Hebrew',
+                            fontSize: 16,
+                            color: Color(0xff000000),
+                          ),
+                          textAlign: TextAlign.justify,
+                        ),
+                        Text(
+                          "\n- PIXABAY. Gestation stages. 2019. Disponível em: "
+                          "https://pixabay.com/images/id-5555311/acesso em: "
+                          "20 jul 2021.",
+                          style: TextStyle(
+                            fontFamily: 'Adobe Hebrew',
+                            fontSize: 16,
+                            color: Color(0xff000000),
+                          ),
+                          textAlign: TextAlign.justify,
+                        ),
                       ],
                     ),
                   ),
