@@ -84,48 +84,48 @@ class Referencia extends StatelessWidget {
                           textAlign: TextAlign.justify,
                         ),
                         Text(
-                          '\n- PIXABAY. Father and Son baby. 2016. Disponível em: '
-                          'https://pixabay.com/images/id-1153919/ acesso em: '
+                          '\n- PIXABAY. Father and Son baby. 2016. \nDisponível em: '
+                          'https://pixabay.com/images/id-1153919/ \nAcesso em: '
                           '20 abr.',
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
                             fontSize: 16,
                             color: Color(0xff000000),
                           ),
-                          textAlign: TextAlign.justify,
+                          textAlign: TextAlign.start,
                         ),
                         Text(
-                          '\n- PIXABAY. Child health. 2019. Disponível em: '
-                          'https://pixabay.com/images/id-2610206/ acesso em: '
+                          '\n- PIXABAY. Child health. 2019. \nDisponível em: '
+                          'https://pixabay.com/images/id-2610206/ \nAcesso em: '
                           '20 jul 2021',
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
                             fontSize: 16,
                             color: Color(0xff000000),
                           ),
-                          textAlign: TextAlign.justify,
+                          textAlign: TextAlign.start,
                         ),
                         Text(
-                          "\n- PIXABAY. Women's health. 2016. Disponível em: "
-                          "https://pixabay.com/images/id-5236517/ acesso em: "
+                          "\n- PIXABAY. Women's health. 2016. \nDisponível em: "
+                          "https://pixabay.com/images/id-5236517/ \nAcesso em: "
                           "22 jul.",
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
                             fontSize: 16,
                             color: Color(0xff000000),
                           ),
-                          textAlign: TextAlign.justify,
+                          textAlign: TextAlign.start,
                         ),
                         Text(
-                          "\n- PIXABAY. Gestation stages. 2019. Disponível em: "
-                          "https://pixabay.com/images/id-5555311/acesso em: "
+                          "\n- PIXABAY. Gestation stages. 2019. \nDisponível em: "
+                          "https://pixabay.com/images/id-5555311/ \nAcesso em: "
                           "20 jul 2021.",
                           style: TextStyle(
                             fontFamily: 'Adobe Hebrew',
                             fontSize: 16,
                             color: Color(0xff000000),
                           ),
-                          textAlign: TextAlign.justify,
+                          textAlign: TextAlign.start,
                         ),
                       ],
                     ),
