@@ -1,9 +1,5 @@
 # pre_natal
 
-A new Flutter project.
-
-## Getting Started
-
 # Terça, 16 novembro 2021
 
 - Implementação da tela de abertura;
