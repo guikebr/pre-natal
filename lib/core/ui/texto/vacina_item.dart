@@ -62,6 +62,7 @@ class VacinacaoItem extends StatelessWidget {
                         content: Text(informacao),
                         actions: <Widget>[
                           TextButton(
+                            onPressed: Navigator.of(context).pop,
                             child: Text(
                               'Fechar',
                               style: TextStyle(
@@ -70,7 +71,6 @@ class VacinacaoItem extends StatelessWidget {
                                 color: const Color(0xff7BBEB9),
                               ),
                             ),
-                            onPressed: Navigator.of(context).pop,
                           ),
                         ],
                       ),

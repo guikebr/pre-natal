@@ -1,5 +1,5 @@
+import 'package:flutter/foundation.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:meta/meta.dart';
 import 'package:pre_natal/core/either/src/either.dart';
 import 'package:pre_natal/core/errors/failure.dart';
 

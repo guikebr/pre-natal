@@ -56,6 +56,13 @@ class Header extends StatelessWidget {
                 width: 145,
                 height: 255,
                 alignment: Alignment.centerLeft,
+                decoration: BoxDecoration(
+                  color: getBackground(type),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(width),
+                    bottomLeft: Radius.circular(width),
+                  ),
+                ),
                 child: Padding(
                   padding: padding,
                   child: Text(
@@ -66,13 +73,6 @@ class Header extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
-                  ),
-                ),
-                decoration: BoxDecoration(
-                  color: getBackground(type),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(width),
-                    bottomLeft: Radius.circular(width),
                   ),
                 ),
               ),
